@@ -50,3 +50,16 @@ Started hands-on practice with **basic programming elements in C#**.
 
 ---
 
+### 🔵 **19 December 2024 – Advanced Basics**
+Focused on strengthening **core programming foundations**.
+
+#### Topics Covered:
+- Detailed understanding of **Data Types**
+- Operators and expressions
+- Clean coding practices
+
+#### Files Added / Updated:
+- `DataType.cs` – Demonstrates different C# data types
+- `Operators.cs` – Implementation of various operators in C#
+
+---
