@@ -16,7 +16,7 @@ It documents my **day-wise learning progress**, hands-on coding tasks, and funda
 
 ## 📅 Training Timeline & Work Progress
 
-### 🟢 **16 December 2024**
+### 🟢 **16 December 2025**
 - Training session officially started
 - Introduction to:
   - .NET ecosystem
@@ -26,7 +26,7 @@ It documents my **day-wise learning progress**, hands-on coding tasks, and funda
 
 ---
 
-### 🟡 **18 December 2024 – Code Work Started**
+### 🟡 **18 December 2025 – Code Work Started**
 Started hands-on practice with **basic programming elements in C#**.
 
 #### Topics Covered:
@@ -50,7 +50,7 @@ Started hands-on practice with **basic programming elements in C#**.
 
 ---
 
-### 🔵 **19 December 2024 – Advanced Basics**
+### 🔵 **19 December 2025 – Advanced Basics**
 Focused on strengthening **core programming foundations**.
 
 #### Topics Covered:
