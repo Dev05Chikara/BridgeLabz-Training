@@ -50,16 +50,59 @@ Started hands-on practice with **basic programming elements in C#**.
 
 ---
 
-### 🔵 **19 December 2025 – Advanced Basics**
-Focused on strengthening **core programming foundations**.
+### 🔵 **19 December 2025 – Advanced Basics & Level-wise Coding**
+Focused on **strengthening core programming foundations** and practicing **level-wise programming problems**.
 
 #### Topics Covered:
 - Detailed understanding of **Data Types**
 - Operators and expressions
 - Clean coding practices
+- Level-wise problem-solving approach (Level-1: basic, Level-2: slightly higher difficulty)
 
 #### Files Added / Updated:
 - `DataType.cs` – Demonstrates different C# data types
 - `Operators.cs` – Implementation of various operators in C#
+
+#### Folder Structure Added:
+c#-programming-elements/
+│
+├── level-1/ → Basic level programming problems
+├── level-2/ → Intermediate level programming problems
+
+
+#### Level-1 Programs Implemented:
+- AgeOfHarry.cs
+- AreaOfTriangle.cs
+- AverageMark.cs
+- Calculator.cs
+- ConversionOfHeight.cs
+- DistanceConversion.cs
+- DistributedPens.cs
+- KilometersToMiles.cs
+- KilometersToMilesWithInput.cs
+- ProfitAndLoss.cs
+- SideOfSquare.cs
+- StudentFee.cs
+- StudentFeeWithInput.cs
+- TotalHandshakes.cs
+- TotalPurchasePrice.cs
+- VolumeOfEarth.cs
+
+#### Level-2 Programs Implemented:
+- CelsiusToFahrenheit.cs
+- ChocolateDistribution.cs
+- DoubleOpt.cs
+- FahrenheitToCelsius.cs
+- IntOperation.cs
+- PoundsToKilograms.cs
+- QuotientAndRemainder.cs
+- SimpleInterestCalculation.cs
+- SwapTwoNumbers.cs
+- TotalIncome.cs
+- TriangularParkRun.cs
+- TripCalculation.cs
+
+> ✅ All programs are written in **C#**, following **clean code practices**, proper **indentation**, and **variable naming conventions**.  
+> ✅ Level-1 focuses on **basic concepts**, Level-2 includes **slightly higher difficulty tasks** to improve logical thinking and problem-solving skills.
 
 ---
