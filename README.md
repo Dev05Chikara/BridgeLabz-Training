@@ -106,3 +106,66 @@ c#-programming-elements/
 > ✅ Level-1 focuses on **basic concepts**, Level-2 includes **slightly higher difficulty tasks** to improve logical thinking and problem-solving skills.
 
 ---
+
+---
+
+### 🔴 **22 December 2025 – Control Flow Programming (Level-1)**
+
+Expanded the codebase by introducing a **new structured folder for Control Flow concepts** in C#.
+
+#### 📁 New Folder Added:
+- `gcr-codebase/c#-control-flow/`
+
+This folder focuses entirely on **control flow programming**, organized by difficulty levels.
+
+---
+
+#### 📂 Level-1: Control Flow Programs
+
+Implemented multiple **Level-1 control flow problems** using:
+- `if / else`
+- `while loop`
+- `for loop`
+- `break statements`
+- Logical conditions
+
+---
+
+#### 🧠 Topics Covered:
+- Conditional Statements
+- Looping Constructs
+- Factorial & Number Series
+- Natural Number Validation
+- Odd / Even Identification
+- Countdown Logic
+- Mathematical Comparisons
+
+---
+
+#### 🧪 Programs Implemented (Level-1):
+
+- `CanVote.cs` – Voting eligibility check  
+- `CountDownWithForLoop.cs` – Countdown using for loop  
+- `CountDownWithWhileLoop.cs` – Countdown using while loop  
+- `DivisibleByFive.cs` – Check divisibility by 5  
+- `EmployeeBonus.cs` – Bonus calculation based on years of service  
+- `FactorialWithForLoop.cs` – Factorial using for loop  
+- `FactorialWithWhileLoop.cs` – Factorial using while loop  
+- `LargestOfTheThreeNumbers.cs` – Find largest among three numbers  
+- `SmallestOfTheThreeNumbers.cs` – Find smallest among three numbers  
+- `MultiplicationTableSixToNine.cs` – Multiplication table (6 to 9)  
+- `NatureOfNumber.cs` – Check number type  
+- `OddEvenNumbers.cs` – Identify odd and even numbers  
+- `SpringSeason.cs` – Check spring season logic  
+- `SumOfNaturalNumbers.cs` – Sum of natural numbers  
+- `SumOfNaturalNumbersWithForLoop.cs` – Sum using for loop  
+- `SumOfNaturalNumbersWithWhileLoop.cs` – Sum using while loop  
+- `SumUntilZero.cs` – Sum until user enters zero  
+- `SumUntilZeroOrNegative.cs` – Sum until zero or negative input  
+
+---
+
+✅ All programs were tested and compiled successfully.  
+This update strengthens **control flow fundamentals** and prepares the base for **higher-level problem solving** in upcoming levels.
+
+---
