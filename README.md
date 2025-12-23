@@ -169,3 +169,40 @@ Implemented multiple **Level-1 control flow problems** using:
 This update strengthens **control flow fundamentals** and prepares the base for **higher-level problem solving** in upcoming levels.
 
 ---
+
+## ✅ Level 2 Completed – Control Flow (Loops & Conditions)
+
+**Completion Status:** ✔ Completed  
+**Focus Area:** Conditional Statements & Looping Constructs  
+**Language:** C#
+
+### 📌 Programs Implemented
+
+- Leap Year  
+  - Using multiple if-else conditions  
+  - Using single if with logical operators  
+
+- Prime Number Check  
+- FizzBuzz  
+  - Using `for` loop  
+  - Using `while` loop  
+
+- BMI Calculation  
+- Factors of a Number  
+- Greatest Factor (beside itself)  
+- Power of a Number  
+- Multiples of a Number below 100  
+- Youngest & Tallest Friend Finder  
+
+### 🛠 Key Concepts Practiced
+- `if`, `else if`, `else`
+- Logical operators (`&&`, `||`)
+- `for` and `while` loops
+- Break statements
+- Basic mathematical logic
+- Clean variable naming (PascalCase)
+
+📂 **Path:**  
+`core-csharp-practice/gcr-codebase/c#-control-flow/level-2`
+
+🚀 Ready to move to **Level 3**
