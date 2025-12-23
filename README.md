@@ -170,6 +170,8 @@ This update strengthens **control flow fundamentals** and prepares the base for 
 
 ---
 
+### 🟣 **23 December 2025 – Control Flow Programming (Level-3)**
+
 ## ✅ Level 2 Completed – Control Flow (Loops & Conditions)
 
 **Completion Status:** ✔ Completed  
@@ -206,3 +208,67 @@ This update strengthens **control flow fundamentals** and prepares the base for 
 `core-csharp-practice/gcr-codebase/c#-control-flow/level-2`
 
 🚀 Ready to move to **Level 3**
+
+---
+
+Successfully completed **Level-3 Control Flow programs**, focusing on **number theory, digit manipulation, advanced looping logic, and switch-case usage**.
+
+This level strengthened logical thinking, step-wise problem solving, and edge-case handling.
+
+---
+
+#### 📂 Level-3: Control Flow Programs
+
+All programs are implemented using:
+- `while` loops
+- `for` loops
+- `if / else` conditions
+- `switch-case`
+- Mathematical and logical reasoning
+
+📂 **Path:**  
+`core-csharp-practice/gcr-codebase/c#-control-flow/level-3`
+
+---
+
+#### 🧠 Topics Covered:
+- Armstrong Number Logic
+- Digit Extraction & Counting
+- Harshad Number Validation
+- Abundant Number Check
+- Calendar-based Day Calculation
+- Switch-case based Calculator
+- Loop-based mathematical analysis
+
+---
+
+#### 🧪 Programs Implemented (Level-3):
+
+- `ArmstrongNumber.cs`  
+  → Checks whether a number is an Armstrong number using digit cube logic  
+
+- `DigitCount.cs`  
+  → Counts the total number of digits in a given integer  
+
+- `HarshadNumber.cs`  
+  → Verifies if a number is divisible by the sum of its digits  
+
+- `AbundantNumber.cs`  
+  → Determines whether a number is an Abundant number  
+
+- `DayOfWeekCalc.cs`  
+  → Calculates the day of the week using Gregorian calendar formula  
+  → Implemented using command-line arguments  
+
+- `Calculator.cs`  
+  → Simple calculator using `switch-case`  
+  → Supports `+`, `-`, `*`, `/` operations  
+
+---
+
+✅ All Level-3 programs were compiled, tested, and validated.  
+✅ Special attention was given to **edge cases**, **input validation**, and **clean control flow logic**.
+
+🚀 Control Flow module is now completed up to **Level-3**, laying a strong foundation for **arrays, strings, and advanced C# concepts** in upcoming levels.
+
+---
