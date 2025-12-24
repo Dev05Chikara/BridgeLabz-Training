@@ -271,7 +271,7 @@ All programs are implemented using:
 
 ---
 
-### 🟣 **24 December 2025 – C# Arrays (Level-1 Completed)**
+### 🟣 **24 December 2025 – C# Arrays (Level-1 & Level-2)**
 
 Started working with **Arrays in C#** and created a **new dedicated folder** to organize array-based problems separately.
 
@@ -282,7 +282,7 @@ This folder focuses on **array fundamentals**, logical conditions with arrays, l
 
 ---
 
-#### 📂 Level-1: Array Programs
+#### 📂 Level-1: C# Arrays
 
 Practiced **Level-1 array problems** covering:
 - Single-dimensional arrays
@@ -325,3 +325,59 @@ Practiced **Level-1 array problems** covering:
 `core-csharp-practice/gcr-codebase/c#-arrays/level-1`
 
 🚀 Ready to move to **Level-2 Arrays**
+
+---
+
+## ✅ Level-2 Completed – C# Arrays
+  
+**Focus Area:** Advanced Array Logic & Real-World Scenarios  
+
+### 📂 Folder Path:
+`gcr-codebase/c#-arrays/level-2`
+
+### 🧠 Concepts Strengthened:
+- Multi-Dimensional Arrays (2D)
+- Dynamic array resizing using temporary arrays
+- Aggregation logic (sum, percentage, bonus)
+- Index handling & validation
+- Real-life data modeling using arrays
+
+---
+
+### 🧪 Programs Implemented (Level-2):
+
+- EmployeeBonusCalculation.cs  
+  - Bonus based on years of service  
+  - Old salary, bonus & new salary calculation  
+  - Total bonus payout  
+
+- YoungestAndTallestFriend.cs  
+  - Youngest by age  
+  - Tallest by height  
+
+- LargestAndSecondLargestDigit.cs  
+  - Digits stored in array  
+  - Dynamic resizing to handle large numbers  
+
+- ReverseNumberUsingArray.cs  
+  - Digit extraction & reverse display  
+
+- BMICalculationUsingArrays.cs  
+  - Height, weight & BMI stored in 2D array  
+  - Weight status determination  
+
+- StudentGradeCalculation.cs  
+  - Marks in Physics, Chemistry, Maths  
+  - Percentage & Grade calculation  
+
+- StudentGradeUsing2DArray.cs  
+  - Marks stored in 2D array  
+  - Grade logic using percentage  
+
+- DigitFrequency.cs  
+  - Frequency count of each digit using array  
+
+---
+
+🚀 **Arrays Module (Level-1 & Level-2) Successfully Completed**  
+Ready to move forward with **advanced problem-solving and next core concepts**.
