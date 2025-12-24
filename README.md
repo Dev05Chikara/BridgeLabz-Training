@@ -107,8 +107,6 @@ c#-programming-elements/
 
 ---
 
----
-
 ### 🔴 **22 December 2025 – Control Flow Programming (Level-1)**
 
 Expanded the codebase by introducing a **new structured folder for Control Flow concepts** in C#.
@@ -272,3 +270,58 @@ All programs are implemented using:
 🚀 Control Flow module is now completed up to **Level-3**, laying a strong foundation for **arrays, strings, and advanced C# concepts** in upcoming levels.
 
 ---
+
+### 🟣 **24 December 2025 – C# Arrays (Level-1 Completed)**
+
+Started working with **Arrays in C#** and created a **new dedicated folder** to organize array-based problems separately.
+
+#### 📁 New Folder Added:
+- `gcr-codebase/c#-arrays/`
+
+This folder focuses on **array fundamentals**, logical conditions with arrays, looping through arrays, and basic data processing.
+
+---
+
+#### 📂 Level-1: Array Programs
+
+Practiced **Level-1 array problems** covering:
+- Single-dimensional arrays
+- Conditional checks with arrays
+- Looping using array length
+- Storing and processing user inputs
+- Basic comparison and aggregation logic
+
+---
+
+#### 🧠 Topics Covered:
+- Array declaration & initialization
+- Iterating arrays using `for` loops
+- Conditional logic with array elements
+- Odd / Even separation
+- Multiplication tables using arrays
+- Dynamic input handling (up to limits)
+- Simple 2D to 1D array conversion concept
+- FizzBuzz using arrays
+
+---
+
+#### 🧪 Programs Implemented (Level-1 Arrays):
+
+- `VotingEligibility.cs` – Check voting eligibility for 10 students  
+- `NumberCheckAndCompare.cs` – Positive/Negative/Zero check + first vs last comparison  
+- `MultiplicationTable.cs` – Multiplication table using array  
+- `MultiplicationTableSixToNine.cs` – Table from 6 to 9 using array  
+- `StoreNumbersAndSum.cs` – Store numbers until limit and calculate sum  
+- `OddEvenArray.cs` – Store odd and even numbers in separate arrays  
+- `FactorsOfNumber.cs` – Find and store factors using dynamic array resizing  
+- `TwoDToOneDArray.cs` – Copy 2D array into 1D array  
+- `FizzBuzzArray.cs` – FizzBuzz implementation using string array
+- `FootballTeam.cs` – Mean of height of all football palyers
+
+---
+
+✅ All programs compiled and tested successfully  
+📂 **Path:**  
+`core-csharp-practice/gcr-codebase/c#-arrays/level-1`
+
+🚀 Ready to move to **Level-2 Arrays**
