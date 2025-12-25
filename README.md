@@ -381,3 +381,119 @@ Practiced **Level-1 array problems** covering:
 
 🚀 **Arrays Module (Level-1 & Level-2) Successfully Completed**  
 Ready to move forward with **advanced problem-solving and next core concepts**.
+
+---
+
+### 🟤 **25 December 2025 – C# Methods (Level-1, Level-2 & Level-3)**
+
+Focused on **method-based programming in C#**, strengthening modular coding, reusability, and clean separation of logic using **functions / methods**.
+
+A new structured folder was created to organize **all method-related programs** level-wise.
+
+---
+
+#### 📁 New Folder Added:
+- `gcr-codebase/c#-methods/`
+
+This folder focuses entirely on:
+- Writing reusable methods
+- Passing parameters & returning values
+- Using arrays & 2D arrays inside methods
+- Applying `Math` class functions
+- Logical problem solving with proper method decomposition
+
+---
+
+## ✅ Level-1 Completed – C# Methods
+
+**Focus Area:** Basic method creation & return values  
+
+### 🧠 Topics Covered:
+- Method declaration & calling
+- Parameter passing
+- Return types
+- Simple mathematical computations using methods
+
+### 🧪 Programs Implemented (Level-1):
+- Unit conversion using methods  
+- Distance & length conversions  
+- Area & perimeter calculations  
+- Basic arithmetic logic wrapped inside methods  
+
+📂 **Path:**  
+`core-csharp-practice/gcr-codebase/c#-methods/level-1`
+
+---
+
+## ✅ Level-2 Completed – C# Methods
+
+**Focus Area:** Arrays & real-life scenarios using methods  
+
+### 🧠 Topics Strengthened:
+- Passing arrays to methods
+- Returning arrays from methods
+- Use of 2D arrays
+- Logical segregation of tasks using multiple methods
+- Cleaner and reusable code structure
+
+### 🧪 Programs Implemented (Level-2):
+- Student marks processing using methods  
+- Total, average & percentage calculation  
+- Grade determination using percentage  
+- Bonus calculation logic using arrays  
+- Displaying formatted output using tabular format  
+
+📂 **Path:**  
+`core-csharp-practice/gcr-codebase/c#-methods/level-2`
+
+---
+
+## ✅ Level-3 Completed – C# Methods (Advanced)
+
+**Focus Area:** Advanced mathematical logic & matrix manipulation using methods  
+
+### 🧠 Topics Covered:
+- Euclidean distance calculation
+- Equation of line using two points
+- Collinearity check using:
+  - Slope formula
+  - Area of triangle formula
+- Extensive **matrix operations**
+- Determinant & inverse logic
+
+---
+
+### 🧪 Programs Implemented (Level-3):
+
+- Euclidean Distance & Line Equation  
+- Collinear Points Check  
+  - Using slope comparison  
+  - Using area of triangle method  
+
+- Employee Bonus System  
+  - Random salary & years of service  
+  - Bonus calculation using conditions  
+  - Old salary, bonus & new salary tracking  
+  - Total bonus payout calculation  
+
+- Student PCM Scorecard  
+  - Random marks generation  
+  - Total, average & percentage (rounded)  
+  - Tabular scorecard display  
+
+- Matrix Operations Module  
+  - Matrix creation using methods  
+  - Addition & subtraction  
+  - Multiplication  
+  - Transpose  
+  - Determinant of 2x2 & 3x3 matrices  
+  - Inverse of 2x2 & 3x3 matrices  
+
+📂 **Path:**  
+`core-csharp-practice/gcr-codebase/c#-methods/level-3`
+
+---
+
+✅ All **Level-1, Level-2, and Level-3** programs inside the **C#-Methods** folder are now **fully completed**.  
+✅ Code follows **clean structure**, **proper naming conventions**, and **method-driven design**.  
+🚀 This module significantly strengthened **problem decomposition, reusability, and logical clarity**, preparing the base for **OOP and advanced C# concepts**.
