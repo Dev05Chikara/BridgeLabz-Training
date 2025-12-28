@@ -497,3 +497,155 @@ This folder focuses entirely on:
 ✅ All **Level-1, Level-2, and Level-3** programs inside the **C#-Methods** folder are now **fully completed**.  
 ✅ Code follows **clean structure**, **proper naming conventions**, and **method-driven design**.  
 🚀 This module significantly strengthened **problem decomposition, reusability, and logical clarity**, preparing the base for **OOP and advanced C# concepts**.
+
+---
+
+### 🟢 **27 December 2025 – C# Strings (Core String Problems)**
+
+Worked extensively on **String manipulation problems** in C#, focusing on **character-level logic**, **loop-based processing**, and **problem-solving without overusing built-in shortcuts**.
+
+A new dedicated folder was used to keep all string-related programs organized.
+
+#### 📁 Folder Path:
+`gcr-codebase/c#-strings/`
+
+---
+
+#### 🧠 Topics Covered:
+- String traversal using loops
+- Character comparison & ASCII logic
+- Case handling (upper/lower)
+- Frequency counting
+- Word-level processing
+- Logical comparison without built-in helpers
+
+---
+
+#### 🧪 Programs Implemented (Strings):
+
+- `VowelsAndConsonants.cs`  
+  → Count total vowels and consonants in a string  
+
+- `ReverseString.cs`  
+  → Reverse a string without using built-in reverse methods  
+
+- `PalindromeCheck.cs`  
+  → Check whether a string is a palindrome  
+
+- `RemoveDuplicates.cs`  
+  → Remove duplicate characters from a string  
+
+- `LongestWord.cs`  
+  → Find the longest word in a sentence  
+
+- `SubstringCount.cs`  
+  → Count occurrences of a substring  
+
+- `ToggleCase.cs`  
+  → Toggle case of each character  
+
+- `CompareStrings.cs`  
+  → Lexicographical comparison of two strings  
+
+- `MostFrequentChar.cs`  
+  → Find the most frequent character  
+
+- `RemoveCharacter.cs`  
+  → Remove all occurrences of a specific character  
+
+- `AnagramCheck.cs`  
+  → Check whether two strings are anagrams  
+
+- `ReplaceWord.cs`  
+  → Replace a specific word in a sentence  
+
+---
+
+✅ All programs compiled and tested successfully  
+✅ Code written using **clean structure**, **proper naming conventions**, and **consistent spacing**  
+🚀 Strengthened understanding of **string internals** and **character-level logic**
+
+---
+
+### 🔵 **28 December 2025 – C# Extras (Built-in Functions & Modular Programs)**
+
+Introduced an **Extras module** to practice **real-world scenarios**, **Date & Time handling**, and **modular programming using functions**.
+
+This work is divided into **Level-1** and **Level-2**, focusing on clarity, reusability, and structured logic.
+
+---
+
+#### 📁 Folder Path:
+`gcr-codebase/c#-extras/`
+
+---
+
+## 🟡 Level-1 – Date & Time (Built-in Functions)
+
+Focused on working with **DateTime**, **DateTimeOffset**, and **TimeZoneInfo**.
+
+#### 🧪 Programs Implemented:
+
+- `TimeZones.cs`  
+  → Display current time in GMT, IST, and PST  
+
+- `DateArithmetic.cs`  
+  → Add days, months, years and subtract weeks  
+
+- `DateFormatting.cs`  
+  → Display dates in multiple custom formats  
+
+- `DateComparison.cs`  
+  → Compare two dates (before / after / same)  
+
+---
+
+## 🔴 Level-2 – Modular Programming & Logic Building
+
+Focused on **function-based design**, **problem decomposition**, and **logical clarity**.
+
+#### 🧪 Programs Implemented:
+
+- `NumberGuessingGame.cs`  
+  → Computer guesses number using user feedback  
+
+- `MaximumOfThree.cs`  
+  → Find maximum of three numbers  
+
+- `PrimeChecker.cs`  
+  → Prime number validation using function  
+
+- `Fibonacci.cs`  
+  → Generate Fibonacci sequence  
+
+- `PalindromeChecker.cs`  
+  → String palindrome check  
+
+- `FactorialRecursion.cs`  
+  → Factorial using recursion  
+
+- `GcdLcm.cs`  
+  → Calculate GCD and LCM  
+
+- `TemperatureConverter.cs`  
+  → Celsius ↔ Fahrenheit conversion  
+
+- `Calculator.cs`  
+  → Modular basic calculator  
+
+---
+
+✅ All programs successfully compiled and executed  
+✅ Emphasis on **modular functions**, **readability**, and **real-world logic**  
+🚀 Extras module completed up to **Level-2**, strengthening confidence in **built-in APIs and function-based design**
+
+---
+
+🎯 **Current Progress Summary:**
+- ✔ Programming Elements  
+- ✔ Control Flow (Level-1 to Level-3)  
+- ✔ Arrays (Level-1 & Level-2)  
+- ✔ Strings  
+- ✔ Extras (Built-ins & Modular Logic)
+
+🚀 Ready to move towards **Advanced C# concepts & DSA-oriented problem solving**.
