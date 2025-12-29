@@ -649,3 +649,96 @@ Focused on **function-based design**, **problem decomposition**, and **logical c
 - ✔ Extras (Built-ins & Modular Logic)
 
 🚀 Ready to move towards **Advanced C# concepts & DSA-oriented problem solving**.
+
+---
+
+## 🟣 29 December 2025 – Scenario-Based Programming (Real-World Logic)
+
+Introduced a new **Scenario-Based module** to apply **core C# concepts** (strings, arrays, loops, conditions, methods) to **real-life problem statements**.
+
+The focus of this day was:
+- Translating real-world scenarios into code
+- Clean logic flow
+- Modular structure
+- Input validation
+- Avoiding unnecessary built-in shortcuts
+
+---
+
+### 📁 New Folder Added
+- `gcr-codebase/scenario-based/`
+
+This folder contains **standalone scenario-driven programs**, each solving a complete problem end-to-end.
+
+---
+
+### 🧠 Concepts Strengthened
+- String processing without built-in helpers
+- 1D & 2D array analysis
+- Game logic implementation
+- Input validation & edge case handling
+- Clear separation of responsibilities
+- User-friendly console interaction
+
+---
+
+### 🧪 Programs Implemented (Scenario-Based)
+
+- **SentenceFormatter.cs**  
+  Auto-corrects paragraph formatting by:
+  - Removing extra spaces
+  - Ensuring proper spacing after punctuation
+  - Capitalizing the first letter of each sentence
+
+- **TextAnalyzer.cs**  
+  Performs text analysis including:
+  - Word count in a paragraph
+  - Longest word detection
+  - Case-insensitive word replacement
+  - Handling empty or space-only input
+
+- **SnakeAndLadder.cs**  
+  Console-based Snake & Ladder game featuring:
+  - Multi-player support
+  - Dice rolling using `Random`
+  - Snake & ladder movement logic
+  - Turn-based player handling
+  - Winner detection
+
+- **TemperatureAnalyzer.cs**  
+  Analyzes weekly temperature data using a **2D array**:
+  - Finds the hottest day
+  - Finds the coldest day
+  - Calculates average temperature per day
+
+- **StudentScores.cs**  
+  Manages student test scores:
+  - Stores scores of `n` students
+  - Calculates and displays average score
+  - Identifies highest and lowest scores
+  - Displays scores above average
+  - Handles invalid input (negative or non-numeric values)
+
+---
+
+### ✅ Status
+- All programs compiled and executed successfully
+- Code written with clean spacing and consistent naming
+- Logic implemented without unnecessary shortcuts
+
+---
+
+### 🎯 Updated Progress Summary
+- ✔ Programming Elements  
+- ✔ Control Flow (Level 1–3)  
+- ✔ Arrays (Level 1–2)  
+- ✔ Strings  
+- ✔ Extras (Built-ins & Modular Logic)  
+- ✔ Scenario-Based Programming  
+
+---
+
+🚀 **Next Goals**
+- Move towards **Advanced C#**
+- Explore **Collections & Generics**
+- Start **OOP-focused and DSA-oriented problem solving**
