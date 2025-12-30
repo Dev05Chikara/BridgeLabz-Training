@@ -742,3 +742,89 @@ This folder contains **standalone scenario-driven programs**, each solving a com
 - Move towards **Advanced C#**
 - Explore **Collections & Generics**
 - Start **OOP-focused and DSA-oriented problem solving**
+
+---
+
+## 🟤 30 December 2025 – Scenario-Based Programming (Library & Quiz Systems)
+
+Extended the **Scenario-Based Programming module** by implementing **end-to-end real-world systems** involving **arrays, strings, methods, conditions, and user interaction**.
+
+This day also included **correcting the project folder structure** to ensure all scenario-based programs live inside the proper workspace.
+
+---
+
+### 🔄 Folder Correction & Organization
+
+Earlier, the scenario-based folder was created at an incorrect location.  
+It has now been **relocated and standardized**.
+
+#### 📁 Final Folder Path
+- `core-csharp-practice/scenario-based/`
+
+✅ All **29 December** scenario-based programs  
+✅ Plus newly added **30 December** programs  
+are now placed correctly inside this folder.
+
+---
+
+### 🧠 Concepts Strengthened
+
+- Array-based data storage for real systems
+- Partial string searching using string operations
+- Case-insensitive string comparison
+- Status tracking using arrays
+- Method-driven system design
+- Score calculation & result evaluation
+- Clean console-based user feedback
+
+---
+
+### 🧪 Programs Implemented (30 December)
+
+#### 📚 Library.cs – Library Management System
+A complete **book search & checkout system**, featuring:
+
+- Book storage using **2D string arrays**
+- Searching books by **partial title**
+- Displaying book details (Title, Author, Status)
+- Borrowing books only if status is **Available**
+- Updating book status from **Available → Checkout**
+- Continuous user interaction with proper flow control
+
+---
+
+#### 📝 EduQuiz.cs – Student Quiz Grader
+A quiz grading system for a **10-question MCQ test**, featuring:
+
+- `correctAnswers[]` and `studentAnswers[]` arrays
+- Case-insensitive answer comparison
+- Detailed per-question feedback:
+  - Correct / Incorrect
+- Score calculation using methods
+- Percentage calculation
+- Pass/Fail decision logic
+
+---
+
+### ✅ Status
+
+- All scenario-based programs (29 & 30 December) compiled successfully
+- Code follows:
+  - Clean spacing
+  - Consistent naming conventions
+  - Method-based design
+- Written using **C# 5 compatible syntax**
+- No unnecessary built-in shortcuts used
+
+---
+
+### 🎯 Updated Progress Summary
+
+- ✔ Programming Elements  
+- ✔ Control Flow (Level 1–3)  
+- ✔ Arrays (Level 1–2)  
+- ✔ Strings  
+- ✔ Extras (Built-ins & Modular Logic)  
+- ✔ Scenario-Based Programming  
+
+🚀 Strong foundation built for moving towards **OOP, classes, and advanced C# concepts**.
