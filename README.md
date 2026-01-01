@@ -122,3 +122,31 @@ A complete **banking system simulation** implemented using **classes and objects
 ---
 
 💡 *This branch marks the transition from procedural thinking to full object-oriented design, laying the foundation for advanced .NET development.*
+
+---
+
+### 🟢 **1 January 2026 – OOPS-Based Scenario Programming (User Interaction & Flow Control)**
+
+Continued strengthening **Object-Oriented Programming in C#** by building a **menu-driven, interactive real-world system** using **classes, objects, arrays, and methods**.
+
+The emphasis of this day was on:
+- Applying OOPS concepts with **continuous user interaction**
+- Designing **loop-driven workflows** inside class methods
+- Managing state (ordered items) within a system
+- Providing clean exit summaries instead of abrupt termination
+- Maintaining **consistent coding style** aligned with earlier work
+
+---
+
+### 🧪 Scenario-Based OOPS Program Implemented (1 January)
+
+#### ☕ **Cafeteria.cs – Cafeteria Menu Ordering System**
+
+A complete **menu-ordering console application** for a campus cafeteria, implemented using **OOPS principles**.
+
+---
+
+🚀 **Momentum Status:** Strong and consistent  
+➡️ Ready to move into **advanced OOPS principles**, multi-class interaction, and **scalable console-based systems**.
+
+---
