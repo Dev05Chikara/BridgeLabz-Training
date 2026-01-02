@@ -150,3 +150,70 @@ A complete **menu-ordering console application** for a campus cafeteria, impleme
 ➡️ Ready to move into **advanced OOPS principles**, multi-class interaction, and **scalable console-based systems**.
 
 ---
+
+### 🟢 **2 January 2026 – Loop-Driven OOPS Scenarios & Conditional Logic**
+
+On this day, the focus shifted towards **strengthening loop control, condition-based decision making, and real-world flow simulation** using **OOPS-driven console applications**.
+
+---
+
+### 🧠 Concepts Practiced & Reinforced (2 January)
+
+- While-loop based execution
+- Accumulator variables (running totals)
+- Conditional exits from loops
+- Modulus operator usage
+- Input validation with `continue`
+- Real-world scenario modeling using OOPS
+- Clean user interaction without abrupt exits
+
+---
+
+### 🧪 Scenario-Based OOPS Programs Implemented (2 January)
+
+#### 🚌 **BusRoute.cs – Bus Route Distance Tracker**
+
+A **bus journey simulation system** that tracks total distance traveled across multiple stops.
+
+---
+
+#### 🎉 **LuckyDraw.cs – Festival Lucky Draw System**
+
+A **Diwali mela lucky draw simulation** where each visitor draws a number to test their luck.
+
+**Winning Rule:**
+- If the number is divisible by **both 3 and 5**, the visitor wins a gift 🎁
+
+---
+
+## ✅ Status (2 January)
+
+- ✔ Both programs compiled successfully  
+- ✔ Executed with multiple test cases  
+- ✔ Loop & condition logic verified  
+- ✔ Clean code formatting maintained  
+- ✔ No hard-coded exits  
+- ✔ Written using **C# 5 compatible syntax**  
+- ✔ Changes committed to Git repository  
+
+---
+
+## 🎯 Updated Training Progress Summary
+
+- ✔ Core Programming Elements *(core-csharp-practice)*  
+- ✔ Control Flow (Level 1–3)  
+- ✔ Arrays (Level 1–2)  
+- ✔ Strings  
+- ✔ Methods (Level 1–3)  
+- ✔ Extras (Built-ins & Modular Logic)  
+- ✔ Scenario-Based Programming (Core C#)  
+- ✔ OOPS – Classes & Objects  
+- ✔ **Loop-Driven OOPS Scenarios**  
+- ✔ **Conditional Logic in Real-World Systems**
+
+---
+
+🚀 **Learning Trajectory:** Consistent & progressive  
+➡️ Next focus areas include **multi-class interaction**, **inheritance**, and **advanced OOPS design patterns**.
+
+---
