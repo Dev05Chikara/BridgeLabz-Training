@@ -217,3 +217,220 @@ A **Diwali mela lucky draw simulation** where each visitor draws a number to tes
 ➡️ Next focus areas include **multi-class interaction**, **inheritance**, and **advanced OOPS design patterns**.
 
 ---
+
+---
+
+### 🟢 **3 January 2026 – Classes, Objects & Constructors (Core OOPS Foundations)**
+
+On this day, the focus was on **solidifying the fundamentals of Object-Oriented Programming** by deeply practicing **classes, objects, and constructors** through multiple **real-world inspired problems**.
+
+The emphasis was on:
+- Understanding **object creation**
+- Default, parameterized, and copy constructors
+- Constructor chaining
+- Encapsulating behavior inside classes
+- Designing small, focused systems per problem
+
+---
+
+### 🧪 OOPS Practice Problems Implemented (3 January)
+
+#### 📘 **Book Class**
+- Attributes: `title`, `author`, `price`
+- Implemented **default** and **parameterized constructors**
+
+---
+
+#### ⚪ **Circle Class**
+- Attribute: `radius`
+- Used **constructor chaining** to initialize values using both default and user input
+
+---
+
+#### 👤 **Person Class (Copy Constructor)**
+- Implemented a **copy constructor** to clone another `Person` object
+
+---
+
+#### 🏨 **Hotel Booking System**
+- Class: `HotelBooking`
+- Attributes: `guestName`, `roomType`, `nights`
+- Implemented:
+  - Default constructor
+  - Parameterized constructor
+  - Copy constructor
+
+---
+
+#### 📚 **Library Book System**
+- Class: `Book`
+- Attributes: `title`, `author`, `price`, `availability`
+- Method:
+  - `BorrowBook()` to manage book availability
+
+---
+
+#### 🚗 **Car Rental System**
+- Class: `CarRental`
+- Attributes: `customerName`, `carModel`, `rentalDays`
+- Constructors used to initialize rentals
+- Total rental cost calculated through class logic
+
+---
+
+## ✅ Status (3 January)
+
+- ✔ All constructor-based programs compiled successfully  
+- ✔ Output verified for multiple scenarios  
+- ✔ Constructor flow clearly demonstrated  
+- ✔ Proper folder segregation maintained  
+- ✔ Code committed to repository  
+
+---
+
+### 🟢 **4 January 2026 – Instance Members, Class Members, Access Modifiers & Inheritance**
+
+This day marked a **major leap in OOPS understanding**, covering:
+- **Instance vs Class variables and methods**
+- **Access modifiers**
+- **Inheritance (single, multilevel, hierarchical, hybrid)**
+- Best practices for inheritance in **C#**
+
+---
+
+## 🔹 Part 1: Instance vs Class Variables & Methods
+
+### 🧪 Problems Implemented
+
+#### 🛒 **Product Inventory**
+- Instance Variables: `productName`, `price`
+- Class Variable: `totalProducts`
+- Methods:
+  - `DisplayProductDetails()` (instance)
+  - `DisplayTotalProducts()` (class)
+
+---
+
+#### 🎓 **Online Course Management**
+- Instance Variables: `courseName`, `duration`, `fee`
+- Class Variable: `instituteName`
+- Methods:
+  - `DisplayCourseDetails()` (instance)
+  - `UpdateInstituteName()` (class)
+
+---
+
+#### 🚘 **Vehicle Registration System**
+- Instance Variables: `ownerName`, `vehicleType`
+- Class Variable: `registrationFee`
+- Methods:
+  - `DisplayVehicleDetails()` (instance)
+  - `UpdateRegistrationFee()` (class)
+
+---
+
+## 🔹 Part 2: Access Modifiers
+
+### 🧪 Problems Implemented
+
+#### 🏫 **University Management System**
+- `rollNumber` → public  
+- `name` → protected  
+- `CGPA` → private  
+- Used public methods to access & modify CGPA  
+- Subclass: `PostgraduateStudent` to demonstrate `protected` access
+
+---
+
+#### 📖 **Book Library System**
+- `ISBN` → public  
+- `title` → protected  
+- `author` → private  
+- Getter & setter for author  
+- Subclass: `EBook` to demonstrate access control
+
+---
+
+#### 🏦 **Bank Account Management**
+- `accountNumber` → public  
+- `accountHolder` → protected  
+- `balance` → private  
+- Controlled access using public methods  
+- Subclass: `SavingsAccount`
+
+---
+
+#### 🧑‍💼 **Employee Records**
+- `employeeID` → public  
+- `department` → protected  
+- `salary` → private  
+- Salary updated via public method  
+- Subclass: `Manager`
+
+---
+
+## 🔹 Part 3: Inheritance (Complete Coverage)
+
+### 🐾 **Animal Hierarchy**
+- Superclass: `Animal`
+- Subclasses: `Dog`, `Cat`, `Bird`
+- Method overriding of `MakeSound()`
+- Demonstrated polymorphism
+
+---
+
+### 🏢 **Employee Management System**
+- Base class: `Employee`
+- Subclasses:
+  - `Manager` (TeamSize)
+  - `Developer` (ProgrammingLanguage)
+  - `Intern` (InternshipDuration)
+- Overridden `DisplayDetails()` method
+
+---
+
+### 🚙 **Vehicle & Transport System**
+- Superclass: `Vehicle`
+- Subclasses: `Car`, `Truck`, `Motorcycle`
+- Demonstrated **runtime polymorphism** using `Vehicle[]`
+
+---
+
+### 📚 **Single Inheritance**
+- Book → Author  
+- Device → Thermostat  
+
+---
+
+### 🧾 **Multilevel Inheritance**
+- Order → ShippedOrder → DeliveredOrder  
+- Course → OnlineCourse → PaidOnlineCourse  
+
+---
+
+### 🏦 **Hierarchical Inheritance**
+- BankAccount → Savings / Checking / FixedDeposit  
+- Person → Teacher / Student / Staff  
+
+---
+
+### 🔀 **Hybrid Inheritance (Using Interfaces)**
+- Person + Worker → Chef / Waiter  
+- Vehicle + Refuelable → PetrolVehicle  
+
+---
+
+## ✅ Status (4 January)
+
+- ✔ All instance, access modifier & inheritance programs compiled  
+- ✔ Concepts tested with multiple scenarios  
+- ✔ Folder-wise organization maintained  
+- ✔ Followed C# best practices  
+- ✔ Large structured commit pushed to repository  
+
+---
+
+🚀 **Overall Progress:** Strong conceptual clarity in OOPS  
+➡️ Ready for **polymorphism-heavy designs, abstraction, interfaces, and design-pattern-oriented problems**
+
+---
