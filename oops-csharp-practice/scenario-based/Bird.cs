@@ -1,0 +1,80 @@
+using System;
+interface IFlyable{
+	void Fly();
+}
+
+interface ISwimmable{
+	void Swim();
+}
+
+class Bird{
+	protected string name;
+	
+	public Bird(string name){
+		this.name= name;
+	}
+	
+	public void DisplayInfo(){
+		Console.WriteLine("\nBird Name: "+name);
+	}
+}
+
+class Eagle : Bird, IFlyable{
+	public Eagle(string name) : base(name){}
+	
+	public void Fly(){
+		Console.WriteLine(name+" is flying high in the sky.");
+	}
+}
+
+class Sparrow : Bird, IFlyable{
+	public Sparrow(string name) : base(name){}
+	
+	public void Fly(){
+		Console.WriteLine(name+" is flying short distances.");
+	}
+}
+
+class Duck : Bird, ISwimmable{
+	public Duck(string name) : base(name){}
+	
+	public void Swim(){
+		Console.WriteLine(name+" is swimming in water.");
+	}
+}
+
+class Penguin : Bird, ISwimmable{
+	public Penguin(string name) : base(name){}
+	
+	public void Swim(){
+		Console.WriteLine(name+" is swimming in cold regions.");
+	}
+}
+
+class Seagull : Bird, IFlyable, ISwimmable{
+	public Seagull(string name) : base(name){}
+	
+	public void Fly(){
+		Console.WriteLine(name+" is flying near the sea.");
+	}
+	
+	public void Swim(){
+		Console.WriteLine(name+" is swimming on ocean surface.");
+	}
+}
+
+class Program{
+	static void Main(){
+		Bird[] birds= new Bird[5];
+		birds[0]= new Eagle("Eagle");
+		birds[1]= new Sparrow("Sparrow");
+		birds[2]= new Duck("Duck");
+		birds[3]= new Penguin("Penguin");
+		birds[4]= new Seagull("Seagull");
+		for(int i=0; i<birds.Length; i++){
+			birds[i].DisplayInfo();
+			if(birds[i] is IFlyable) ((IFlyable)birds[i]).Fly();
+			if(birds[i] is ISwimmable) ((ISwimmable)birds[i]).Swim();
+		}
+	}
+}
