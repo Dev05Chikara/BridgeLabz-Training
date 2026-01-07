@@ -27,7 +27,8 @@ namespace BridgeLabzTraining.senariobased.employee_wage_computation_problem
                 Console.WriteLine("2. Check Employee Attendance");
                 Console.WriteLine("3. Calculate Daily Wage");
                 Console.WriteLine("4. Calculate Part Time Wage");
-                Console.WriteLine("5. Exit");
+                Console.WriteLine("5. Calculate Wage Using Switch Case");
+                Console.WriteLine("6. Exit");
                 Console.Write("Enter your choice: ");
 
                 int choice = int.Parse(Console.ReadLine());
@@ -48,6 +49,9 @@ namespace BridgeLabzTraining.senariobased.employee_wage_computation_problem
                         employeeUtility.CalculatePartTimeWage();
                         break;
                     case 5:
+                        employeeUtility.CalculateWageUsingSwitchCase();
+                        break;
+                    case 6:
                         continueMenu = false;
                         Console.WriteLine("Exiting...");
                         break;

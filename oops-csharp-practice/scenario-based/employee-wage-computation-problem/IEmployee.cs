@@ -19,5 +19,8 @@ namespace BridgeLabzTraining.senariobased.employee_wage_computation_problem
 
         // UC3 - Calculate Part Time Wage
         double CalculatePartTimeWage();
+
+        // UC4 - Calculate Wage Using Switch Case
+        double CalculateWageUsingSwitchCase();
     }
 }

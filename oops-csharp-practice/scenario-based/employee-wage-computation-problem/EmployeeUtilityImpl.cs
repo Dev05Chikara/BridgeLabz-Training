@@ -65,5 +65,34 @@ namespace BridgeLabzTraining.senariobased.employee_wage_computation_problem
             Console.WriteLine($"Part Time Wage: {wage}");
             return wage;
         }
+
+        // UC4 - Solving using Switch Case Statement
+        public double CalculateWageUsingSwitchCase()
+        {
+            int empType = random.Next(0, 3); // 0: Absent, 1: Full Time, 2: Part Time
+            double dailyWage = 0;
+
+            switch (empType)
+            {
+                case Employee.IS_ABSENT:
+                    Console.WriteLine("Employee is Absent");
+                    dailyWage = 0;
+                    break;
+                case Employee.IS_PRESENT:
+                    Console.WriteLine("Employee is Present (Full Time)");
+                    dailyWage = Employee.WAGE_PER_HOUR * Employee.FULL_DAY_HOUR;
+                    break;
+                case Employee.IS_PART_TIME:
+                    Console.WriteLine("Employee is Present (Part Time)");
+                    dailyWage = Employee.WAGE_PER_HOUR * Employee.PART_TIME_HOUR;
+                    break;
+                default:
+                    Console.WriteLine("Invalid Employee Type");
+                    break;
+            }
+
+            Console.WriteLine($"Daily Wage: {dailyWage}");
+            return dailyWage;
+        }
     }
 }
