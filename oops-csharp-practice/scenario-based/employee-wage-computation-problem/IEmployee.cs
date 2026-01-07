@@ -16,5 +16,8 @@ namespace BridgeLabzTraining.senariobased.employee_wage_computation_problem
 
         // UC2 - Calculate Daily Employee Wage
         double CalculateDailyWage();
+
+        // UC3 - Calculate Part Time Wage
+        double CalculatePartTimeWage();
     }
 }

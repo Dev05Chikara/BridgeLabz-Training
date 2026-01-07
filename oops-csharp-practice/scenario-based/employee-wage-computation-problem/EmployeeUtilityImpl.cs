@@ -57,5 +57,13 @@ namespace BridgeLabzTraining.senariobased.employee_wage_computation_problem
 
             return dailyWage;
         }
+
+        // UC3 - Add Part Time Employee & Wage
+        public double CalculatePartTimeWage()
+        {
+            double wage = Employee.WAGE_PER_HOUR * Employee.PART_TIME_HOUR;
+            Console.WriteLine($"Part Time Wage: {wage}");
+            return wage;
+        }
     }
 }
