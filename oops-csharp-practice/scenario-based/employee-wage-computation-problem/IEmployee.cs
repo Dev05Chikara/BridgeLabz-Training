@@ -22,5 +22,8 @@ namespace BridgeLabzTraining.senariobased.employee_wage_computation_problem
 
         // UC4 - Calculate Wage Using Switch Case
         double CalculateWageUsingSwitchCase();
+
+        // UC5 - Calculate Monthly Wage
+        double CalculateMonthlyWage();
     }
 }

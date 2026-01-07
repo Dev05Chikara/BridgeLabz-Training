@@ -94,5 +94,36 @@ namespace BridgeLabzTraining.senariobased.employee_wage_computation_problem
             Console.WriteLine($"Daily Wage: {dailyWage}");
             return dailyWage;
         }
+
+        // UC5 - Calculating Wages for a Month
+        public double CalculateMonthlyWage()
+        {
+            double monthlyWage = 0;
+
+            for (int day = 1; day <= Employee.WORKING_DAYS_PER_MONTH; day++)
+            {
+                int empType = random.Next(0, 3);
+                double dailyWage = 0;
+
+                switch (empType)
+                {
+                    case Employee.IS_ABSENT:
+                        dailyWage = 0;
+                        break;
+                    case Employee.IS_PRESENT:
+                        dailyWage = Employee.WAGE_PER_HOUR * Employee.FULL_DAY_HOUR;
+                        break;
+                    case Employee.IS_PART_TIME:
+                        dailyWage = Employee.WAGE_PER_HOUR * Employee.PART_TIME_HOUR;
+                        break;
+                }
+
+                monthlyWage += dailyWage;
+                Console.WriteLine($"Day {day}: Wage = {dailyWage}");
+            }
+
+            Console.WriteLine($"Total Monthly Wage: {monthlyWage}");
+            return monthlyWage;
+        }
     }
 }
