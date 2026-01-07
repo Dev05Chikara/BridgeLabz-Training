@@ -125,5 +125,48 @@ namespace BridgeLabzTraining.senariobased.employee_wage_computation_problem
             Console.WriteLine($"Total Monthly Wage: {monthlyWage}");
             return monthlyWage;
         }
+
+        // UC6 - Calculate Wages till a condition of total working hours or days is reached
+        public double CalculateWageTillCondition()
+        {
+            int totalWorkingHours = 0;
+            int totalWorkingDays = 0;
+            double totalWage = 0;
+
+            while (totalWorkingHours < Employee.MAX_WORKING_HOURS && totalWorkingDays < Employee.MAX_WORKING_DAYS)
+            {
+                totalWorkingDays++;
+                int empType = random.Next(0, 3);
+                int hoursWorked = 0;
+                double dailyWage = 0;
+
+                switch (empType)
+                {
+                    case Employee.IS_ABSENT:
+                        hoursWorked = 0;
+                        dailyWage = 0;
+                        break;
+                    case Employee.IS_PRESENT:
+                        hoursWorked = Employee.FULL_DAY_HOUR;
+                        dailyWage = Employee.WAGE_PER_HOUR * Employee.FULL_DAY_HOUR;
+                        break;
+                    case Employee.IS_PART_TIME:
+                        hoursWorked = Employee.PART_TIME_HOUR;
+                        dailyWage = Employee.WAGE_PER_HOUR * Employee.PART_TIME_HOUR;
+                        break;
+                }
+
+                totalWorkingHours += hoursWorked;
+                totalWage += dailyWage;
+
+                Console.WriteLine($"Day {totalWorkingDays}: Hours = {hoursWorked}, Wage = {dailyWage}, Total Hours = {totalWorkingHours}");
+            }
+
+            Console.WriteLine($"\nTotal Working Days: {totalWorkingDays}");
+            Console.WriteLine($"Total Working Hours: {totalWorkingHours}");
+            Console.WriteLine($"Total Wage: {totalWage}");
+
+            return totalWage;
+        }
     }
 }

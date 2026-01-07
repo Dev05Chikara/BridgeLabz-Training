@@ -57,6 +57,9 @@ namespace BridgeLabzTraining.senariobased.employee_wage_computation_problem
                         employeeUtility.CalculateMonthlyWage();
                         break;
                     case 7:
+                        employeeUtility.CalculateWageTillCondition();
+                        break;
+                    case 8:
                         continueMenu = false;
                         Console.WriteLine("Exiting...");
                         break;
