@@ -13,5 +13,8 @@ namespace BridgeLabzTraining.senariobased.employee_wage_computation_problem
 
         // UC1 - Check Employee Attendance
         bool CheckEmployeeAttendance();
+
+        // UC2 - Calculate Daily Employee Wage
+        double CalculateDailyWage();
     }
 }

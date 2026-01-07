@@ -38,5 +38,24 @@ namespace BridgeLabzTraining.senariobased.employee_wage_computation_problem
                 return false;
             }
         }
+
+        // UC2 - Calculate Daily Employee Wage
+        public double CalculateDailyWage()
+        {
+            bool isPresent = CheckEmployeeAttendance();
+            double dailyWage = 0;
+
+            if (isPresent)
+            {
+                dailyWage = Employee.WAGE_PER_HOUR * Employee.FULL_DAY_HOUR;
+                Console.WriteLine($"Daily Wage: {dailyWage}");
+            }
+            else
+            {
+                Console.WriteLine("Daily Wage: 0 (Employee Absent)");
+            }
+
+            return dailyWage;
+        }
     }
 }
