@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BridgeLabzTraining.senariobased.employee_wage_computation_problem
 {
     internal class EmployeeUtilityImpl : IEmployee
     {
-        private Employee employee;
+        private Employee[] employees = new Employee[10];
+        private int employeeCount = 0;
         private Random random;
 
         public EmployeeUtilityImpl()
@@ -16,17 +13,41 @@ namespace BridgeLabzTraining.senariobased.employee_wage_computation_problem
             random = new Random();
         }
 
-        // Logic
+        // Check employee added or not
+        private bool IsEmployeeAdded()
+        {
+            if (employeeCount == 0)
+            {
+                Console.WriteLine("Error: Employee not added. Please add employee first.");
+                return false;
+            }
+            return true;
+        }
+
+        // UC0 - Add Employee
         public Employee AddEmployee()
         {
-            employee = new Employee();
+            if (employeeCount >= employees.Length)
+            {
+                Console.WriteLine("Employee limit reached.");
+                return null;
+            }
+
+            Employee employee = new Employee();
+            employees[employeeCount++] = employee;
+            Console.WriteLine("Employee added successfully.");
+
             return employee;
         }
 
-        // UC1 - Check Employee is Present or Absent
+        // UC1 - Check Employee Attendance
         public bool CheckEmployeeAttendance()
         {
-            int attendance = random.Next(0, 2); // Generates 0 or 1
+            if (!IsEmployeeAdded())
+                return false;
+
+            int attendance = random.Next(0, 2);
+
             if (attendance == Employee.IS_PRESENT)
             {
                 Console.WriteLine("Employee is Present");
@@ -39,55 +60,58 @@ namespace BridgeLabzTraining.senariobased.employee_wage_computation_problem
             }
         }
 
-        // UC2 - Calculate Daily Employee Wage
+        // UC2 - Calculate Daily Wage
         public double CalculateDailyWage()
         {
+            if (!IsEmployeeAdded())
+                return 0;
+
             bool isPresent = CheckEmployeeAttendance();
             double dailyWage = 0;
 
             if (isPresent)
             {
                 dailyWage = Employee.WAGE_PER_HOUR * Employee.FULL_DAY_HOUR;
-                Console.WriteLine($"Daily Wage: {dailyWage}");
-            }
-            else
-            {
-                Console.WriteLine("Daily Wage: 0 (Employee Absent)");
             }
 
+            Console.WriteLine($"Daily Wage: {dailyWage}");
             return dailyWage;
         }
 
-        // UC3 - Add Part Time Employee & Wage
+        // UC3 - Calculate Part Time Wage
         public double CalculatePartTimeWage()
         {
+            if (!IsEmployeeAdded())
+                return 0;
+
             double wage = Employee.WAGE_PER_HOUR * Employee.PART_TIME_HOUR;
             Console.WriteLine($"Part Time Wage: {wage}");
             return wage;
         }
 
-        // UC4 - Solving using Switch Case Statement
+        // UC4 - Wage using Switch Case
         public double CalculateWageUsingSwitchCase()
         {
-            int empType = random.Next(0, 3); // 0: Absent, 1: Full Time, 2: Part Time
+            if (!IsEmployeeAdded())
+                return 0;
+
+            int empType = random.Next(0, 3);
             double dailyWage = 0;
 
             switch (empType)
             {
                 case Employee.IS_ABSENT:
                     Console.WriteLine("Employee is Absent");
-                    dailyWage = 0;
                     break;
+
                 case Employee.IS_PRESENT:
                     Console.WriteLine("Employee is Present (Full Time)");
                     dailyWage = Employee.WAGE_PER_HOUR * Employee.FULL_DAY_HOUR;
                     break;
+
                 case Employee.IS_PART_TIME:
                     Console.WriteLine("Employee is Present (Part Time)");
                     dailyWage = Employee.WAGE_PER_HOUR * Employee.PART_TIME_HOUR;
-                    break;
-                default:
-                    Console.WriteLine("Invalid Employee Type");
                     break;
             }
 
@@ -95,9 +119,12 @@ namespace BridgeLabzTraining.senariobased.employee_wage_computation_problem
             return dailyWage;
         }
 
-        // UC5 - Calculating Wages for a Month
+        // UC5 - Calculate Monthly Wage
         public double CalculateMonthlyWage()
         {
+            if (!IsEmployeeAdded())
+                return 0;
+
             double monthlyWage = 0;
 
             for (int day = 1; day <= Employee.WORKING_DAYS_PER_MONTH; day++)
@@ -107,12 +134,10 @@ namespace BridgeLabzTraining.senariobased.employee_wage_computation_problem
 
                 switch (empType)
                 {
-                    case Employee.IS_ABSENT:
-                        dailyWage = 0;
-                        break;
                     case Employee.IS_PRESENT:
                         dailyWage = Employee.WAGE_PER_HOUR * Employee.FULL_DAY_HOUR;
                         break;
+
                     case Employee.IS_PART_TIME:
                         dailyWage = Employee.WAGE_PER_HOUR * Employee.PART_TIME_HOUR;
                         break;
@@ -126,30 +151,32 @@ namespace BridgeLabzTraining.senariobased.employee_wage_computation_problem
             return monthlyWage;
         }
 
-        // UC6 - Calculate Wages till a condition of total working hours or days is reached
+        // UC6 - Calculate Wage Till Condition
         public double CalculateWageTillCondition()
         {
+            if (!IsEmployeeAdded())
+                return 0;
+
             int totalWorkingHours = 0;
             int totalWorkingDays = 0;
             double totalWage = 0;
 
-            while (totalWorkingHours < Employee.MAX_WORKING_HOURS && totalWorkingDays < Employee.MAX_WORKING_DAYS)
+            while (totalWorkingHours < Employee.MAX_WORKING_HOURS &&
+                   totalWorkingDays < Employee.MAX_WORKING_DAYS)
             {
                 totalWorkingDays++;
                 int empType = random.Next(0, 3);
+
                 int hoursWorked = 0;
                 double dailyWage = 0;
 
                 switch (empType)
                 {
-                    case Employee.IS_ABSENT:
-                        hoursWorked = 0;
-                        dailyWage = 0;
-                        break;
                     case Employee.IS_PRESENT:
                         hoursWorked = Employee.FULL_DAY_HOUR;
                         dailyWage = Employee.WAGE_PER_HOUR * Employee.FULL_DAY_HOUR;
                         break;
+
                     case Employee.IS_PART_TIME:
                         hoursWorked = Employee.PART_TIME_HOUR;
                         dailyWage = Employee.WAGE_PER_HOUR * Employee.PART_TIME_HOUR;
@@ -159,10 +186,12 @@ namespace BridgeLabzTraining.senariobased.employee_wage_computation_problem
                 totalWorkingHours += hoursWorked;
                 totalWage += dailyWage;
 
-                Console.WriteLine($"Day {totalWorkingDays}: Hours = {hoursWorked}, Wage = {dailyWage}, Total Hours = {totalWorkingHours}");
+                Console.WriteLine(
+                    $"Day {totalWorkingDays}: Hours={hoursWorked}, Wage={dailyWage}"
+                );
             }
 
-            Console.WriteLine($"\nTotal Working Days: {totalWorkingDays}");
+            Console.WriteLine($"Total Working Days: {totalWorkingDays}");
             Console.WriteLine($"Total Working Hours: {totalWorkingHours}");
             Console.WriteLine($"Total Wage: {totalWage}");
 
