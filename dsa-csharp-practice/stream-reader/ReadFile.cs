@@ -1,0 +1,15 @@
+//Read File Line by Line
+using System;
+using System.IO;
+
+class ReadFile{
+	static void Main(){
+		using(StreamReader sr= new StreamReader("data.txt")){
+			string line;
+			
+			while((line= sr.ReadLine())!=null){
+				Console.WriteLine(line);
+			}
+		}
+	}
+}
