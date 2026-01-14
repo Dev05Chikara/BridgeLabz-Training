@@ -434,3 +434,300 @@ This day marked a **major leap in OOPS understanding**, covering:
 ➡️ Ready for **polymorphism-heavy designs, abstraction, interfaces, and design-pattern-oriented problems**
 
 ---
+
+### 🟢 **5 January 2026 – Advanced OOPS: Abstraction, Interfaces & Polymorphism**
+
+This day marked a major step forward into **advanced Object-Oriented Programming design**, focusing on  
+**abstraction, interfaces, inheritance, encapsulation, and runtime polymorphism** through real-world systems.
+
+The emphasis was on:
+- Designing **multi-class architectures**
+- Separating responsibilities across files
+- Applying **industry-style OOPS patterns**
+- Building **menu-driven, extensible systems**
+
+---
+
+## 🧠 Concepts Practiced & Reinforced (5 January)
+
+- Abstract classes for shared structure
+- Interfaces for defining contracts
+- Encapsulation using private fields & public properties
+- Inheritance with specialization
+- Runtime polymorphism using base references
+- Interface-based behavior checks
+- Clean file separation per responsibility
+- Console-based menu-driven execution
+
+---
+
+## 🧪 OOPS Systems Implemented (5 January)
+
+---
+
+### 🏥 **Hospital Patient Management System**
+
+A complete **hospital workflow simulation** implemented using **core OOPS pillars**.
+
+**Design Highlights:**
+- Abstract Class: `Patient`
+- Derived Classes:
+  - `InPatient`
+  - `OutPatient`
+- Interface:
+  - `IPayable`
+- Supporting Classes:
+  - `Doctor`
+  - `Bill`
+
+**Key Learnings:**
+- Abstract method implementation
+- Polymorphic billing logic
+- Interface-driven payment handling
+- Clean separation of medical and billing logic
+
+---
+
+### 🚗 **Vehicle Rental Application**
+
+A **vehicle rental system** designed to demonstrate **inheritance + interface-based polymorphism**.
+
+**Design Highlights:**
+- Base Class: `Vehicle`
+- Derived Classes:
+  - `Bike`
+  - `Car`
+  - `Truck`
+- Interface:
+  - `IRentable`
+- Supporting Class:
+  - `Customer`
+
+**Key Learnings:**
+- Protected fields usage
+- Dynamic rent calculation
+- Polymorphic processing of vehicles
+
+---
+
+## ✅ Status (5 January)
+
+- ✔ Advanced OOPS concepts implemented successfully  
+- ✔ Multi-file architecture maintained  
+- ✔ Code compiled and tested  
+- ✔ Clean formatting & naming conventions followed  
+- ✔ Written using **C# 5 compatible syntax**
+
+---
+
+### 🟢 **6 January 2026 – Polymorphism with Interfaces & Real-World Scenarios**
+
+Focused on strengthening **interface-based polymorphism** and **array-driven object management** using real-world scenarios.
+
+---
+
+## 🧠 Concepts Practiced (6 January)
+
+- Interface implementation across multiple classes
+- Polymorphic method invocation
+- Array-based object storage
+- Menu-driven execution
+- Clean abstraction without unnecessary inheritance depth
+
+---
+
+## 🧪 Scenario-Based Programs Implemented (6 January)
+
+---
+
+### 🐦 **Bird Sanctuary Management System**
+
+A wildlife conservation system showcasing **pure interface-based polymorphism**.
+
+**Design Highlights:**
+- Base Class: `Bird`
+- Interfaces:
+  - `IFlyable`
+  - `ISwimmable`
+- Implementations:
+  - `Eagle`, `Sparrow` → IFlyable
+  - `Duck`, `Penguin` → ISwimmable
+  - `Seagull` → IFlyable + ISwimmable
+
+**Key Learnings:**
+- Multiple interface implementation
+- Behavior-based method invocation
+- Runtime interface checking
+
+---
+
+### 📞 **Customer Service Call Log Manager**
+
+A telecom-style **call log tracking system** implemented using **arrays and string operations**.
+
+**Features:**
+- Add call logs dynamically
+- Search logs using keyword matching
+- Filter logs by time range
+- Menu-driven interaction
+
+---
+
+## ✅ Status (6 January)
+
+- ✔ Interface-driven systems verified  
+- ✔ Polymorphism tested at runtime  
+- ✔ String & DateTime handling validated  
+- ✔ Clean modular code structure maintained  
+
+---
+
+### 🟢 **7 January 2026 – Employee Wage Computation (OOPS + Use Cases)**
+
+This day focused on implementing the **Employee Wage Computation Problem** using  
+**incremental Use Cases (UC-1 to UC-6)** following an **industry-style iterative approach**.
+
+---
+
+## 🧠 Concepts Practiced (7 January)
+
+- Interface-based design (`IEmployee`)
+- Incremental feature development
+- Menu-driven execution
+- Separation of logic into utility classes
+- Handling multiple employees dynamically
+
+---
+
+## 🧪 Program Implemented (7 January)
+
+### 👨‍💼 **Employee Wage Computation System**
+
+**Use Cases Implemented:**
+- UC-1: Employee attendance
+- UC-2: Daily wage calculation
+- UC-3: Part-time employee logic
+- UC-4: Wage for fixed working days
+- UC-5: Wage for fixed working hours
+- UC-6: Monthly wage computation
+
+**Architecture:**
+- Interface: `IEmployee`
+- Utility Class: `EmployeeUtilityImpl`
+- Menu Handler: `EmployeeMenu`
+- Main Execution Class
+
+---
+
+## ✅ Status (7 January)
+
+- ✔ All use cases implemented successfully  
+- ✔ Logic verified with multiple scenarios  
+- ✔ Clean separation of concerns  
+- ✔ Menu-driven flow tested  
+
+---
+
+### 🟢 **8 January 2026 – Appliance Control & Fitness Tracking Systems**
+
+This day emphasized **interface-driven control systems** and **user-centric tracking applications**.
+
+---
+
+## 🧪 Scenario-Based Programs Implemented (8 January)
+
+---
+
+### 🏠 **Smart Home Automation System**
+
+A modular **appliance control system** built using interfaces.
+
+**Design Highlights:**
+- Base Class: `Appliance`
+- Interface: `IControllable`
+- Implementations:
+  - `LightBulb`
+  - `Fan`
+  - `Ac`
+
+**Features:**
+- Turn ON/OFF appliances
+- Menu-driven control
+- Polymorphic appliance handling
+
+---
+
+### 🏋️ **Fitness Tracker System**
+
+A **user fitness tracking application** focused on activity monitoring.
+
+**Design Highlights:**
+- Interface: `ITrackable`
+- Classes:
+  - `UserProfile`
+  - `WorkOut`
+  - Utility & Menu handlers
+
+**Features:**
+- Track workouts
+- Display activity summary
+- User-driven interaction flow
+
+---
+
+## ✅ Status (8 January)
+
+- ✔ Interface-based control logic validated  
+- ✔ Polymorphism tested across appliances  
+- ✔ Clean modular structure followed  
+
+---
+
+### 🟢 **9 January 2026 – ATM Dispenser & Scenario-Based System Design**
+
+Focused on designing a **real-world ATM system** using **interfaces, utilities, and menu-driven flow**.
+
+---
+
+## 🧪 Program Implemented (9 January)
+
+### 🏦 **ATM Dispenser Logic System**
+
+A complete **ATM cash dispensing simulation**.
+
+**Design Highlights:**
+- Interface: `IATM`
+- Utility Implementation: `ATMUtilityImpl`
+- Menu Handler: `ATMMenu`
+- Main Execution Class
+
+**Features:**
+- Minimum note dispensing
+- Dynamic denomination handling
+- Scenario-based fallback logic
+- Clean exit with transaction summary
+
+---
+
+## ✅ Final Status (OOPS Branch)
+
+- ✔ Advanced OOPS concepts mastered  
+- ✔ Interface & abstraction-based systems built  
+- ✔ Real-world scenario modeling achieved  
+- ✔ Menu-driven architecture consistently followed  
+- ✔ Code maintained with clean structure & spacing  
+- ✔ Written using **C# 5 compatible syntax**  
+
+---
+
+## 🚀 Overall Learning Outcome (OOPS Branch)
+
+- Strong command over **OOPS fundamentals**
+- Practical understanding of **interfaces & abstraction**
+- Ability to design **scalable console applications**
+- Confidence in **multi-file, real-world system design**
+
+➡️ Ready to integrate **DSA + OOPS** and move towards **production-level problem solving**
+
+---
+
