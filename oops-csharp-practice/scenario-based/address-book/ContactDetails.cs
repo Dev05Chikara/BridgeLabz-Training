@@ -23,9 +23,16 @@ internal class ContactDetails
         this.email= email;
     }
 
-    public string GetFirstName(){
+    public string GetFirstName()
+    {
         return firstName;
     }
+
+    public string GetLastName()
+    {
+    return lastName;
+    }
+
 
     public void UpdateDetails(string lastName, string address, string city,string state, string zip, string phoneNumber, string email)
     {

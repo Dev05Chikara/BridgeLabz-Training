@@ -4,6 +4,17 @@ class AddressBookUtility : IAddressBook
     ContactDetails[] contacts= new ContactDetails[10];
     int totalContacts= 0;
 
+    // Duplicate check using Full Name
+    bool IsDuplicate(string firstName, string lastName)
+    {
+        for(int i=0;i<totalContacts;i++){
+            if(contacts[i].GetFirstName().Equals(firstName) && contacts[i].GetLastName().Equals(lastName)){
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void AddDetails()
     {
         if(totalContacts>=contacts.Length){
@@ -27,6 +38,11 @@ class AddressBookUtility : IAddressBook
 
             Console.Write("Enter last name: ");
             string lastName= Console.ReadLine();
+
+            if(IsDuplicate(firstName,lastName)){
+                Console.WriteLine("Duplicate person (same full name) not allowed.");
+                continue;
+            }
 
             Console.Write("Enter address: ");
             string address= Console.ReadLine();
@@ -79,12 +95,16 @@ class AddressBookUtility : IAddressBook
         }
 
         Console.Write("Enter first name of contact to edit: ");
-        string name= Console.ReadLine();
+        string firstName= Console.ReadLine();
+
+        Console.Write("Enter last name of contact to edit: ");
+        string lastName= Console.ReadLine();
 
         for(int i=0;i<totalContacts;i++){
-            if(contacts[i].GetFirstName().Equals(name)){
+            if(contacts[i].GetFirstName().Equals(firstName) && contacts[i].GetLastName().Equals(lastName)){
+
                 Console.Write("Enter new last name: ");
-                string lastName= Console.ReadLine();
+                string newLastName= Console.ReadLine();
 
                 Console.Write("Enter new address: ");
                 string address= Console.ReadLine();
@@ -104,11 +124,18 @@ class AddressBookUtility : IAddressBook
                 Console.Write("Enter new email: ");
                 string email= Console.ReadLine();
 
+                // If last name is changed, re-check duplication
+                if(!newLastName.Equals(lastName) && IsDuplicate(firstName,newLastName)){
+                    Console.WriteLine("Another contact with same full name exists.");
+                    return;
+                }
+
                 contacts[i].UpdateDetails(
-                    lastName,address,city,state,zip,phoneNumber,email
+                    newLastName,address,city,state,zip,phoneNumber,email
                 );
 
                 Console.WriteLine("\n-Contact updated successfully-");
+                Console.WriteLine("------------------------------------------");
                 return;
             }
         }
@@ -124,10 +151,15 @@ class AddressBookUtility : IAddressBook
         }
 
         Console.Write("Enter first name of contact to delete: ");
-        string name= Console.ReadLine();
+        string firstName= Console.ReadLine();
+
+        Console.Write("Enter last name of contact to delete: ");
+        string lastName= Console.ReadLine();
 
         for(int i=0;i<totalContacts;i++){
-            if(contacts[i].GetFirstName().Equals(name)){
+            if(contacts[i].GetFirstName().Equals(firstName)
+               && contacts[i].GetLastName().Equals(lastName)){
+
                 for(int j=i;j<totalContacts-1;j++){
                     contacts[j]= contacts[j+1];
                 }
