@@ -17,7 +17,7 @@ class AddressBookMenu
             Console.WriteLine("5. Search Person by State");
             Console.WriteLine("6. Count Contacts by City");
             Console.WriteLine("7. Count Contacts by State");
-            Console.WriteLine("8. Exit");
+            Console.WriteLine("0. Exit");
             Console.Write("Enter your choice: ");
             choice= int.Parse(Console.ReadLine());
 
@@ -57,7 +57,7 @@ class AddressBookMenu
                     system.CountByCityOrState(Console.ReadLine(), false);
                     break;
 
-                case 8:
+                case 0:
                     Console.WriteLine("Exiting...");
                     break;
 
@@ -66,7 +66,7 @@ class AddressBookMenu
                     break;
             }
 
-        }while(choice!=8);
+        }while(choice!=0);
     }
 
     void ContactMenu(AddressBookUtility address)
@@ -78,7 +78,8 @@ class AddressBookMenu
             Console.WriteLine("2. Display Contacts");
             Console.WriteLine("3. Edit Contact");
             Console.WriteLine("4. Delete Contact");
-            Console.WriteLine("5. Back");
+            Console.WriteLine("5. Sort contacts alphabetically by names");
+            Console.WriteLine("0. Back");
             Console.Write("Enter your option: ");
             option= int.Parse(Console.ReadLine());
 
@@ -100,6 +101,10 @@ class AddressBookMenu
                     break;
 
                 case 5:
+                    address.SortContactsByName();
+                    break;
+
+                case 0:
                     Console.WriteLine("...Returning to Address Book System...");
                     break;
 
@@ -108,6 +113,6 @@ class AddressBookMenu
                     break;
             }
 
-        }while(option!=5);
+        }while(option!=0);
     }
 }

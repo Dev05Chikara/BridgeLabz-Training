@@ -185,4 +185,28 @@ class AddressBookUtility : IAddressBook
     {
         return totalContacts;
     }
+
+    public void SortContactsByName()
+    {
+        if(totalContacts==0){
+            Console.WriteLine("Address book is empty.");
+            return;
+        }
+        for (int i = 0; i < totalContacts - 1; i++)
+        {
+            for (int j = 0; j < totalContacts - i - 1; j++)
+            {
+                string name1 = contacts[j].GetFirstName() + contacts[j].GetLastName();
+                string name2 = contacts[j + 1].GetFirstName() + contacts[j + 1].GetLastName();
+
+                if (string.Compare(name1, name2, true) > 0)
+                {
+                    ContactDetails temp = contacts[j];
+                    contacts[j] = contacts[j + 1];
+                    contacts[j + 1] = temp;
+                }
+            }
+        }
+        Console.WriteLine("Contacts got sorted(alphabetically) on the basis of names.");
+    }
 }
