@@ -49,7 +49,7 @@ class AddressBookUtility : IAddressBook
     public void DisplayAll()
     {
         if(totalContacts==0){
-            Console.WriteLine("Address book is empty. Add contacts.");
+            Console.WriteLine("Address book is empty.");
             return;
         }
 
@@ -69,12 +69,9 @@ class AddressBookUtility : IAddressBook
 
         Console.Write("Enter first name of contact to edit: ");
         string name= Console.ReadLine();
-        bool found= false;
 
         for(int i=0;i<totalContacts;i++){
             if(contacts[i].GetFirstName().Equals(name)){
-                found= true;
-
                 Console.Write("Enter new last name: ");
                 string lastName= Console.ReadLine();
 
@@ -101,14 +98,39 @@ class AddressBookUtility : IAddressBook
                 );
 
                 Console.WriteLine("\n-Contact updated successfully-");
-                Console.WriteLine(contacts[i]);
+                return;
+            }
+        }
+
+        Console.WriteLine("Contact not found.");
+    }
+
+    public void DeleteContact()
+    {
+        if(totalContacts==0){
+            Console.WriteLine("Address book is empty.");
+            return;
+        }
+
+        Console.Write("Enter first name of contact to delete: ");
+        string name= Console.ReadLine();
+
+        for(int i=0;i<totalContacts;i++){
+            if(contacts[i].GetFirstName().Equals(name)){
+                
+                for(int j=i;j<totalContacts-1;j++){
+                    contacts[j]= contacts[j+1];
+                }
+
+                contacts[totalContacts-1]= null;
+                totalContacts--;
+
+                Console.WriteLine("\n-Contact deleted successfully-");
                 Console.WriteLine("------------------------------------------");
                 return;
             }
         }
 
-        if(!found){
-            Console.WriteLine("Contact not found.");
-        }
+        Console.WriteLine("Contact not found.");
     }
 }

@@ -11,9 +11,7 @@ internal class ContactDetails
     private string phoneNumber;
     private string email;
 
-    public ContactDetails(string firstName, string lastName, string address,
-                          string city, string state, string zip,
-                          string phoneNumber, string email)
+    public ContactDetails(string firstName, string lastName, string address, string city, string state, string zip, string phoneNumber, string email)
     {
         this.firstName= firstName;
         this.lastName= lastName;
@@ -29,8 +27,7 @@ internal class ContactDetails
         return firstName;
     }
 
-    public void UpdateDetails(string lastName, string address, string city,
-                              string state, string zip, string phoneNumber, string email)
+    public void UpdateDetails(string lastName, string address, string city,string state, string zip, string phoneNumber, string email)
     {
         this.lastName= lastName;
         this.address= address;
