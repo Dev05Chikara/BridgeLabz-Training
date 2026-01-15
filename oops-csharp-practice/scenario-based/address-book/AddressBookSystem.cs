@@ -61,4 +61,27 @@ class AddressBookSystem
             Console.WriteLine((i+1)+". "+bookNames[i]);
         }
     }
+
+    public void SearchByCityOrState(string value, bool searchByCity)
+    {
+        bool found = false;
+        for (int i = 0; i < totalBooks; i++)
+        {
+            ContactDetails[] contacts = books[i].GetContacts();
+            int count = books[i].GetTotalContacts();
+
+            for (int j = 0; j < count; j++)
+            {
+                if ((searchByCity && contacts[j].GetCity().Equals(value, StringComparison.OrdinalIgnoreCase))
+                 || (!searchByCity && contacts[j].GetState().Equals(value, StringComparison.OrdinalIgnoreCase)))
+                {
+                    Console.WriteLine("[" + bookNames[i] + "] " + contacts[j]);
+                    found = true;
+                }
+            }
+        }
+
+        if (!found)
+            Console.WriteLine("No matching records found.");
+    }
 }

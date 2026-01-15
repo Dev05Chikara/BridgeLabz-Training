@@ -175,4 +175,14 @@ class AddressBookUtility : IAddressBook
 
         Console.WriteLine("Contact not found.");
     }
+
+    public ContactDetails[] GetContacts()
+    {
+        return contacts;
+    }
+
+    public int GetTotalContacts()
+    {
+        return totalContacts;
+    }
 }

@@ -13,7 +13,9 @@ class AddressBookMenu
             Console.WriteLine("1. Add Address Book");
             Console.WriteLine("2. Display Address Books");
             Console.WriteLine("3. Select Address Book");
-            Console.WriteLine("4. Exit");
+            Console.WriteLine("4. Search Person by City");
+            Console.WriteLine("5. Search Person by State");
+            Console.WriteLine("6. Exit");
             Console.Write("Enter your choice: ");
             choice= int.Parse(Console.ReadLine());
 
@@ -34,7 +36,17 @@ class AddressBookMenu
                     break;
 
                 case 4:
-                    Console.WriteLine("...Exiting System...");
+                    Console.Write("Enter City: ");
+                    system.SearchByCityOrState(Console.ReadLine(), true);
+                    break;
+
+                case 5:
+                    Console.Write("Enter State: ");
+                    system.SearchByCityOrState(Console.ReadLine(), false);
+                    break;
+
+                case 6:
+                    Console.WriteLine("Exiting...");
                     break;
 
                 default:
@@ -42,7 +54,7 @@ class AddressBookMenu
                     break;
             }
 
-        }while(choice!=4);
+        }while(choice!=6);
     }
 
     void ContactMenu(AddressBookUtility address)

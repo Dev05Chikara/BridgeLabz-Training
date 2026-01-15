@@ -33,6 +33,14 @@ internal class ContactDetails
     return lastName;
     }
 
+    public string GetCity()
+    {
+        return city;
+    }
+    public string GetState()
+    {
+        return state;
+    }
 
     public void UpdateDetails(string lastName, string address, string city,string state, string zip, string phoneNumber, string email)
     {
@@ -47,6 +55,6 @@ internal class ContactDetails
 
     public override string ToString()
     {
-        return firstName+" "+lastName+", "+address+", "+city+", "+state+" "+zip+", "+phoneNumber+", "+email;
+        return firstName+" "+lastName+" | "+address+" | "+city+" | "+state+", "+zip+" | "+phoneNumber+" | "+email;
     }
 }
