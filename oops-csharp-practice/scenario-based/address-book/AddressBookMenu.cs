@@ -15,7 +15,9 @@ class AddressBookMenu
             Console.WriteLine("3. Select Address Book");
             Console.WriteLine("4. Search Person by City");
             Console.WriteLine("5. Search Person by State");
-            Console.WriteLine("6. Exit");
+            Console.WriteLine("6. Count Contacts by City");
+            Console.WriteLine("7. Count Contacts by State");
+            Console.WriteLine("8. Exit");
             Console.Write("Enter your choice: ");
             choice= int.Parse(Console.ReadLine());
 
@@ -46,6 +48,16 @@ class AddressBookMenu
                     break;
 
                 case 6:
+                    Console.Write("Enter City: ");
+                    system.CountByCityOrState(Console.ReadLine(), true);
+                    break;
+
+                case 7:
+                    Console.Write("Enter State: ");
+                    system.CountByCityOrState(Console.ReadLine(), false);
+                    break;
+
+                case 8:
                     Console.WriteLine("Exiting...");
                     break;
 
@@ -54,7 +66,7 @@ class AddressBookMenu
                     break;
             }
 
-        }while(choice!=6);
+        }while(choice!=8);
     }
 
     void ContactMenu(AddressBookUtility address)
