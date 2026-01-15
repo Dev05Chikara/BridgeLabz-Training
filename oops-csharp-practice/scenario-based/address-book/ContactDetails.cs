@@ -1,5 +1,5 @@
 using System;
-//first and last names, address, city, state, zip, phone number and email...
+
 internal class ContactDetails
 {
     private string firstName;
@@ -11,20 +11,38 @@ internal class ContactDetails
     private string phoneNumber;
     private string email;
 
-    public ContactDetails(string firstName, string lastName, string address, string city, string state, string zip, string phoneNumber, string email)
+    public ContactDetails(string firstName, string lastName, string address,
+                          string city, string state, string zip,
+                          string phoneNumber, string email)
     {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.address = address;
-        this.city = city;
-        this.state = state;
-        this.zip = zip;
-        this.phoneNumber = phoneNumber;
-        this.email = email;
+        this.firstName= firstName;
+        this.lastName= lastName;
+        this.address= address;
+        this.city= city;
+        this.state= state;
+        this.zip= zip;
+        this.phoneNumber= phoneNumber;
+        this.email= email;
+    }
+
+    public string GetFirstName(){
+        return firstName;
+    }
+
+    public void UpdateDetails(string lastName, string address, string city,
+                              string state, string zip, string phoneNumber, string email)
+    {
+        this.lastName= lastName;
+        this.address= address;
+        this.city= city;
+        this.state= state;
+        this.zip= zip;
+        this.phoneNumber= phoneNumber;
+        this.email= email;
     }
 
     public override string ToString()
     {
-        return firstName + " " + lastName + ", " + address + ", " + city + ", " + state + " " + zip + ", " + phoneNumber + ", " + email;
+        return firstName+" "+lastName+", "+address+", "+city+", "+state+" "+zip+", "+phoneNumber+", "+email;
     }
 }
