@@ -1,5 +1,4 @@
 using System;
-
 class AddressBookUtility : IAddressBook
 {
     ContactDetails[] contacts= new ContactDetails[10];
@@ -12,37 +11,49 @@ class AddressBookUtility : IAddressBook
             return;
         }
 
-        Console.WriteLine("------------------------------------------");
-        Console.Write("Enter first name: ");
-        string firstName= Console.ReadLine();
+        Console.Write("How many contacts do you want to add? ");
+        int count= int.Parse(Console.ReadLine());
 
-        Console.Write("Enter last name: ");
-        string lastName= Console.ReadLine();
+        for(int k=0;k<count;k++){
+            if(totalContacts>=contacts.Length){
+                Console.WriteLine("Address book is full. Cannot add more contacts.");
+                return;
+            }
 
-        Console.Write("Enter address: ");
-        string address= Console.ReadLine();
+            Console.WriteLine("\n------ Enter details for contact "+(k+1)+" ------");
 
-        Console.Write("Enter city: ");
-        string city= Console.ReadLine();
+            Console.Write("Enter first name: ");
+            string firstName= Console.ReadLine();
 
-        Console.Write("Enter state: ");
-        string state= Console.ReadLine();
+            Console.Write("Enter last name: ");
+            string lastName= Console.ReadLine();
 
-        Console.Write("Enter zip: ");
-        string zip= Console.ReadLine();
+            Console.Write("Enter address: ");
+            string address= Console.ReadLine();
 
-        Console.Write("Enter phone number: ");
-        string phoneNumber= Console.ReadLine();
+            Console.Write("Enter city: ");
+            string city= Console.ReadLine();
 
-        Console.Write("Enter e-mail: ");
-        string email= Console.ReadLine();
+            Console.Write("Enter state: ");
+            string state= Console.ReadLine();
 
-        contacts[totalContacts]= new ContactDetails(
-            firstName,lastName,address,city,state,zip,phoneNumber,email
-        );
+            Console.Write("Enter zip: ");
+            string zip= Console.ReadLine();
 
-        totalContacts++;
-        Console.WriteLine("\n-Contact added-");
+            Console.Write("Enter phone number: ");
+            string phoneNumber= Console.ReadLine();
+
+            Console.Write("Enter e-mail: ");
+            string email= Console.ReadLine();
+
+            contacts[totalContacts]= new ContactDetails(
+                firstName,lastName,address,city,state,zip,phoneNumber,email
+            );
+
+            totalContacts++;
+            Console.WriteLine("-Contact added successfully-");
+        }
+
         Console.WriteLine("------------------------------------------");
     }
 
@@ -117,7 +128,6 @@ class AddressBookUtility : IAddressBook
 
         for(int i=0;i<totalContacts;i++){
             if(contacts[i].GetFirstName().Equals(name)){
-                
                 for(int j=i;j<totalContacts-1;j++){
                     contacts[j]= contacts[j+1];
                 }
