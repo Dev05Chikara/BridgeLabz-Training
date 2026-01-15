@@ -1,9 +1,17 @@
 //first and last names, address, city, state, zip, phone number and email...
 using System;
+using System.Diagnostics.Contracts;
 class AddressBookUtility : IAddressBook
 {
+    ContactDetails [] contacts= new ContactDetails[10];
+    int totalContacts=0;
     public void AddDetails()
     {
+        if(totalContacts>=contacts.Length)
+        {
+            Console.WriteLine("Address book is full. Cannot add more contacts.");
+            return;
+        }
         Console.WriteLine("------------------------------------------");
         Console.Write("Enter first name: ");
         string firstName= Console.ReadLine();
@@ -40,8 +48,26 @@ class AddressBookUtility : IAddressBook
             email
         );
 
+        contacts[totalContacts]= contact;
+        totalContacts++;
+        Console.WriteLine("\n-Contact added-");
         Console.WriteLine(contact.ToString());
         Console.WriteLine("------------------------------------------");
 
+    }
+
+    public void DisplayAll()
+    {
+        if(totalContacts==0)
+        {
+            Console.WriteLine("Address book is empty. Add contacts.");
+            return;
+        }
+        Console.WriteLine("\n-Available contacts-");
+        for(int i=0; i<totalContacts; i++)
+        {
+            Console.WriteLine((i+1)+". "+contacts[i].ToString());
+        }
+        Console.WriteLine("------------------------------------------");
     }
 }

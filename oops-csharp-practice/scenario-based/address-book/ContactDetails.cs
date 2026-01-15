@@ -25,6 +25,6 @@ internal class ContactDetails
 
     public override string ToString()
     {
-        return "Successfully added: " + firstName + " " + lastName + ", " + address + ", " + city + ", " + state + " " + zip + ", " + phoneNumber + ", " + email;
+        return firstName + " " + lastName + ", " + address + ", " + city + ", " + state + " " + zip + ", " + phoneNumber + ", " + email;
     }
 }

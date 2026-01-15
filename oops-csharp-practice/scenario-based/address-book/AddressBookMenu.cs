@@ -5,19 +5,30 @@ class AddressBookMenu
     public void Start()
     {
         IAddressBook address= new AddressBookUtility();
-        Console.WriteLine("\n---------- Select the function ----------");
-        Console.WriteLine("1. Add Details");
-        Console.WriteLine("2. Exit");
-        Console.Write("Enter your choice: ");
-        int choice= int.Parse(Console.ReadLine());
-        switch(choice){
-            case 1:
-                address.AddDetails();
-                break;
-            case 2:
-                Console.WriteLine("Thanks for Visiting!");
-                Console.WriteLine("------------------------------------------");
-                break;
-        }
+        int choice;
+        do
+        {
+            Console.WriteLine("\n---------- Select the function ----------");
+            Console.WriteLine("1. Add Details");
+            Console.WriteLine("2. Display all contacts");
+            Console.WriteLine("3. Exit");
+            Console.Write("Enter your choice: ");
+            choice= int.Parse(Console.ReadLine());
+            switch(choice){
+                case 1:
+                    address.AddDetails();
+                    break;
+                case 2:
+                    address.DisplayAll();
+                    break;
+                case 3:
+                    Console.WriteLine("Thanks for Visiting!");
+                    Console.WriteLine("------------------------------------------");
+                    break;
+                default:
+                    Console.WriteLine("Invalid choice.");
+                    break;
+            }
+        }while(choice!=3);
     }
 }
