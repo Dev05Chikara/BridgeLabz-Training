@@ -720,12 +720,129 @@ A complete **ATM cash dispensing simulation**.
 
 ---
 
+### 🟢 **15 January 2026 – Address Book Management System (Complete Build)**
+
+Implemented a **comprehensive Address Book Management System** using **advanced OOPS design patterns** with incremental feature development across use cases.
+
+---
+
+## 🧠 Concepts Practiced (15 January)
+
+- Interface-driven design
+- Multi-entity management
+- Search & filter operations
+- Sorting algorithms
+- Duplicate prevention logic
+- Multi-level data organization
+- Menu-driven execution
+- Clean separation of concerns
+
+---
+
+## 🧪 Program Implemented (15 January)
+
+### 📇 **Address Book Management System**
+
+A complete **multi-address book system** with comprehensive contact management capabilities.
+
+**Design Highlights:**
+- Interface: `IAddressBook`
+- Classes:
+  - `ContactDetails`
+  - `AddressBookSystem`
+  - `AddressBookUtility`
+  - `AddressBookMenu`
+
+---
+
+## 📋 All Use Cases Implemented
+
+**UC-1:** Address Book Initialization - Create contact with first/last name, address, city, state, zip, phone, email  
+**UC-2:** Add a new Contact to Address Book  
+**UC-3:** Edit existing person using their name  
+**UC-4:** Delete a person using person's name  
+**UC-5:** Add multiple persons to Address Book  
+**UC-6:** Refactor to add multiple Address Books (Each with unique Name)  
+**UC-7:** Ability to add multiple persons to multiple Address Books  
+
+---
+
+### 🔍 **UC-8: Ensure No Duplicate Entries**
+- Prevent duplicate contact entries in same Address Book
+- Validation logic implemented in utility class
+
+---
+
+### 🌍 **UC-9: Search by City or State**
+- Search persons across multiple Address Books
+- Filter by City or State
+- Return all matching results
+
+---
+
+### 📊 **UC-10: Count by City or State**
+- Get total count of persons in specific City
+- Get total count of persons in specific State
+- Across all Address Books
+
+---
+
+### 🔤 **UC-11: Sort Alphabetically**
+- Sort entries by Person's name alphabetically
+- Display sorted contact list
+- Clean modular sorting logic
+
+---
+
+## ✅ Status (15 January)
+
+- ✔ All 11 use cases implemented successfully  
+- ✔ Multi-address book system operational  
+- ✔ Search, filtering, and sorting verified  
+- ✔ Duplicate prevention validated  
+- ✔ Clean separation of concerns maintained  
+- ✔ Menu-driven flow tested with multiple scenarios  
+- ✔ Written using **C# 5 compatible syntax**  
+- ✔ Changes committed to Git repository  
+
+---
+
+## 🎯 Updated Training Progress Summary
+
+- ✔ Core Programming Elements *(core-csharp-practice)*  
+- ✔ Control Flow (Level 1–3)  
+- ✔ Arrays (Level 1–2)  
+- ✔ Strings  
+- ✔ Methods (Level 1–3)  
+- ✔ Extras (Built-ins & Modular Logic)  
+- ✔ Scenario-Based Programming (Core C#)  
+- ✔ OOPS – Classes & Objects  
+- ✔ Loop-Driven OOPS Scenarios  
+- ✔ Conditional Logic in Real-World Systems  
+- ✔ Instance Members & Class Members  
+- ✔ Access Modifiers & Inheritance  
+- ✔ Advanced OOPS: Abstraction & Interfaces  
+- ✔ Polymorphism with Interfaces  
+- ✔ Employee Wage Computation (Use Case-Driven)  
+- ✔ Smart Home Automation & Fitness Tracking  
+- ✔ ATM Dispenser Logic  
+- ✔ **Address Book Management System (Multi-UC)**
+
+---
+
+🚀 **Learning Trajectory:** Advanced OOPS mastery achieved  
+➡️ Ready for **complex data structures, advanced algorithms, and production-grade system design**
+
+---
+
 ## 🚀 Overall Learning Outcome (OOPS Branch)
 
 - Strong command over **OOPS fundamentals**
 - Practical understanding of **interfaces & abstraction**
 - Ability to design **scalable console applications**
 - Confidence in **multi-file, real-world system design**
+- Proficiency in **incremental use-case-driven development**
+- Mastery of **search, filter, and sort operations**
 
 ➡️ Ready to integrate **DSA + OOPS** and move towards **production-level problem solving**
 
