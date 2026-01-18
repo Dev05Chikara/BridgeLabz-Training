@@ -326,7 +326,7 @@ Implemented **complex real-world systems** combining multiple data structures an
 
 ---
 
-### 🟢 **17-18 January 2026 **
+### 🟢 **17-18 January 2026**
 
 Continued implementing **real-world systems** combining data structures and patterns.
 
