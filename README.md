@@ -326,13 +326,42 @@ Implemented **complex real-world systems** combining multiple data structures an
 
 ---
 
+### 🟢 **17-18 January 2026 **
+
+Continued implementing **real-world systems** combining data structures and patterns.
+
+---
+
+## 🧠 Concepts Practiced (17-18 January)
+
+- Flash deal inventory management
+- User step tracking
+- Fitness data persistence
+- Real-time product availability
+- Dynamic pricing strategies
+
+---
+
+## 🧪 Scenario-Based Systems Implemented (17-18 January)
+
+### 🏃 **Fitness Tracker – User Steps & Generate Leader-Board**
+- User step tracking
+- Steps data maintenance
+- Personal records and updation
+
+### ⚡ **Flash Dealz – Product Sorting by Discount**
+- Flash deal creation
+- Product search and sorting on the basis of discount
+- discount comparison and deals display
+
+---
+
 ## 🎯 Overall Training Progress Summary
 
 - ✔ Core C# Fundamentals *(core-csharp-practice)*  
 - ✔ Object-Oriented Programming *(oops-csharp-practice)*  
 - ✔ Linked Lists  
-- ✔ Stack & Queue  
-- ✔ HashMap & HashSet  
+- ✔ Stack & Queue   
 - ✔ Sorting Algorithms  
 - ✔ Searching Algorithms  
 - ✔ String & File Performance  
