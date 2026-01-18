@@ -274,9 +274,7 @@ Focused on **performance analysis** and **algorithm benchmarking**.
 
 ---
 
-### 🟢 **16 January 2026 – Advanced Scenario-Based Systems (Part 1)**
-
-Implemented **complex real-world systems** combining multiple data structures and patterns.
+### 🟢 **16 January 2026 – Scenario-Based Systems**
 
 ---
 
