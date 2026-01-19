@@ -1,2 +1,2 @@
 # BridgeLabz-Training
-CapGemini Training Session
+Training Session
