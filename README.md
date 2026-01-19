@@ -354,6 +354,61 @@ Continued implementing **real-world systems** combining data structures and patt
 
 ---
 
+### 🟢 **19 January 2026 – Advanced Scenario-Based Systems**
+
+Completed **exam proctoring and parcel tracking systems** with **stack navigation and linked list state management**.
+
+---
+
+## 🧠 Concepts Practiced (19 January)
+
+- Stack-based navigation history
+- Hash table (custom HashMap) for answer storage
+- Linked List for parcel stage tracking
+- Checkpoint insertion in linked list
+- Answer scoring and evaluation
+- Menu-driven interactive systems
+
+---
+
+## 🧪 Scenario-Based Systems Implemented (19 January)
+
+### 📝 **Exam Proctor – Question Navigation & Scoring**
+- **QuestionNode**: Stores question ID and answer
+- **NavigationStack**: LIFO stack for question navigation history
+- **AnswerMap**: Hash table with chaining for storing question-answer pairs
+  - Put(questionId, answer) - Store/Update answer
+  - Get(questionId) - Retrieve saved answer
+- **Features**:
+  - Visit questions by ID
+  - Answer questions and save to hash map
+  - Navigate back through question history using stack
+  - Calculate score on exam submission
+  - Menu-driven exam interface with 5 question MCQ system
+
+### 📦 **Parcel Tracker – Delivery Pipeline Management**
+- **ParcelNode**: Represents a stage in parcel journey (Packed → Shipped → In transit → Delivered)
+- **Linked List Pipeline**: Sequential stages using singly linked list
+- **Features**:
+  - Display complete parcel tracking journey
+  - Add new checkpoint between existing stages
+  - Mark parcel as lost (nullify tracking chain)
+  - Dynamic stage insertion in linked list
+  - Real-time status visibility
+
+---
+
+## ✅ Status (19 January)
+
+- ✔ Exam proctor with 5-question MCQ system fully functional
+- ✔ Hash table implementation for answer storage working correctly
+- ✔ Stack-based navigation history implemented
+- ✔ Parcel tracker with checkpoint insertion in linked list
+- ✔ Lost parcel tracking and recovery mechanism
+- ✔ Both systems tested with menu-driven interfaces
+
+---
+
 ## 🎯 Overall Training Progress Summary
 
 - ✔ Core C# Fundamentals *(core-csharp-practice)*  
