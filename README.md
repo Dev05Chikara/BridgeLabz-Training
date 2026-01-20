@@ -409,6 +409,54 @@ Completed **exam proctoring and parcel tracking systems** with **stack navigatio
 
 ---
 
+### 🟢 **20 January 2026 – Advanced Scenario-Based Systems**
+
+Implemented **government ID validation** and **password cracking algorithms** using **radix sort** and **backtracking**.
+
+---
+
+## 🧠 Concepts Practiced (20 January)
+
+- Radix sort for non-negative integers
+- Binary search on sorted data
+- Backtracking algorithm
+- Recursive password generation
+- Character set permutation
+
+---
+
+## 🧪 Scenario-Based Systems Implemented (20 January)
+
+### 🆔 **Aadhar Number Management System**
+- **Features**:
+  - Add 12-digit Aadhar numbers
+  - Radix Sort for efficient sorting of numerical IDs
+  - Binary Search for quick Aadhar lookup
+  - Display all stored Aadhar entries
+  - Menu-driven interface
+- **Key Concepts**: Counting sort implementation, radix sort for non-comparative sorting, binary search optimization
+
+### 🔐 **Password Cracker – Brute Force Attack Simulation**
+- **Features**:
+  - Backtracking-based password generation
+  - Recursive character set traversal (A-Z, a-z, 0-9)
+  - Attempt all possible combinations
+  - Password match detection
+  - Time tracking for brute force attempts
+- **Key Concepts**: Backtracking recursion, permutation generation, exhaustive search
+
+---
+
+## ✅ Status (20 January)
+
+- ✔ Aadhar validation system with radix sort working efficiently
+- ✔ Binary search for optimized lookups implemented
+- ✔ Password cracker with recursive backtracking functional
+- ✔ Character set permutation complete
+- ✔ Both systems menu-driven and fully tested
+
+---
+
 ## 🎯 Overall Training Progress Summary
 
 - ✔ Core C# Fundamentals *(core-csharp-practice)*  
