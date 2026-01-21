@@ -457,7 +457,77 @@ Implemented **government ID validation** and **password cracking algorithms** us
 
 ---
 
+### 🟢 **21 January 2026 – Advanced Sorting & Optimization Systems**
+
+Implemented **educational result processing** and **smart checkout optimization** using **merge sort** and **efficient searching algorithms**.
+
+---
+
+## 🧠 Concepts Practiced (21 January)
+
+- Merge sort for stable sorting
+- Custom comparator implementations
+- Dictionary-based lookups for optimization
+- Dynamic data aggregation
+- Price calculation and optimization
+- Multi-criteria sorting and filtering
+
+---
+
+## 🧪 Scenario-Based Systems Implemented (21 January)
+
+### 📚 **EduResults – Student Result Processing & Ranking**
+- **Features**:
+  - Store student records with roll numbers and marks
+  - Merge Sort for stable sorting of student results
+  - Sort by total marks with rank assignment
+  - Display ranked student list with scores
+  - Dynamic result aggregation
+  - Menu-driven result management interface
+- **Key Components**:
+  - `Student.cs`: Student data model with roll number, name, and marks
+  - `MergeSortUtility.cs`: Merge sort implementation for stable sorting
+  - `EduResultsMain.cs`: Menu-driven main program for result processing
+- **Key Concepts**: Stable sorting algorithms, custom comparators, O(n log n) performance guarantee
+
+### 💳 **SmartCheckout – Intelligent Billing & Discounts**
+- **Features**:
+  - Add customers with multiple products
+  - Automatic discount application based on purchase amount
+  - Optimized checkout calculation
+  - Price aggregation and optimization
+  - Receipt generation with discounts
+  - Menu-driven checkout interface
+- **Key Components**:
+  - `Customer.cs`: Customer data model with purchase details
+  - `CheckoutUtility.cs`: Billing and discount calculation engine
+  - `SmartCheckoutMain.cs`: Menu-driven checkout system
+- **Key Concepts**: Dynamic pricing strategies, sorting optimization, efficient lookups, discount algorithms
+
+---
+
+## ✅ Status (21 January)
+
+- ✔ EduResults system with merge sort for student ranking
+- ✔ Stable sorting verified for result processing
+- ✔ SmartCheckout with intelligent discount application
+- ✔ Dynamic price calculation and optimization
+- ✔ Both systems fully tested and menu-driven
+- ✔ Clean separation of concerns with utility classes
+
+---
+
 ## 🎯 Overall Training Progress Summary
+
+- ✔ Core C# Fundamentals *(core-csharp-practice)*  
+- ✔ Object-Oriented Programming *(oops-csharp-practice)*  
+- ✔ Linked Lists  
+- ✔ Stack & Queue   
+- ✔ Sorting Algorithms  
+- ✔ Searching Algorithms  
+- ✔ String & File Performance  
+- ✔ Strategy-Based Optimization  
+- ✔ Algorithm Performance Analysis  
 
 - ✔ Core C# Fundamentals *(core-csharp-practice)*  
 - ✔ Object-Oriented Programming *(oops-csharp-practice)*  
