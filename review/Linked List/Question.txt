@@ -1,0 +1,3 @@
+Remove the nth node from the end from last node in one traversal
+
+chirag.patil@bridgelabz.com
