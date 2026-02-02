@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\BridgeLabz-Training\\IPLCensorship\\IPLCensorship.csproj": {}
+    "C:\\BridgeLabz-Training\\io-csharp-practice\\gcr-codebase\\IPLCensorship\\IPLCensorship.csproj": {}
   },
   "projects": {
-    "C:\\BridgeLabz-Training\\IPLCensorship\\IPLCensorship.csproj": {
+    "C:\\BridgeLabz-Training\\io-csharp-practice\\gcr-codebase\\IPLCensorship\\IPLCensorship.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\BridgeLabz-Training\\IPLCensorship\\IPLCensorship.csproj",
+        "projectUniqueName": "C:\\BridgeLabz-Training\\io-csharp-practice\\gcr-codebase\\IPLCensorship\\IPLCensorship.csproj",
         "projectName": "IPLCensorship",
-        "projectPath": "C:\\BridgeLabz-Training\\IPLCensorship\\IPLCensorship.csproj",
+        "projectPath": "C:\\BridgeLabz-Training\\io-csharp-practice\\gcr-codebase\\IPLCensorship\\IPLCensorship.csproj",
         "packagesPath": "C:\\Users\\devch\\.nuget\\packages\\",
-        "outputPath": "C:\\BridgeLabz-Training\\IPLCensorship\\obj\\",
+        "outputPath": "C:\\BridgeLabz-Training\\io-csharp-practice\\gcr-codebase\\IPLCensorship\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
