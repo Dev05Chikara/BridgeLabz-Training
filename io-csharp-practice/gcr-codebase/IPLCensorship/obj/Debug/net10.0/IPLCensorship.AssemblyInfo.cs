@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IPLCensorship")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7dd4acdc58cd0704c72f3b140e85522cc3d2aad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37a7522d10239094d62af7380727334486710909")]
 [assembly: System.Reflection.AssemblyProductAttribute("IPLCensorship")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IPLCensorship")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

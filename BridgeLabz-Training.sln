@@ -1,0 +1,39 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "io-csharp-practice", "io-csharp-practice", "{CC06BBEA-78FB-1DEC-A088-AA7D257CBC79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gcr-codebase", "gcr-codebase", "{145E80F2-0D39-08AF-1D1D-845695688CDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPLCensorship", "io-csharp-practice\gcr-codebase\IPLCensorship\IPLCensorship.csproj", "{21012A3A-1198-664A-3BC5-7596CC8A4A6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonPractice", "io-csharp-practice\gcr-codebase\JsonPractice\JsonPractice.csproj", "{FE0F7767-96B8-D168-CF7B-9A25CA80A819}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21012A3A-1198-664A-3BC5-7596CC8A4A6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21012A3A-1198-664A-3BC5-7596CC8A4A6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21012A3A-1198-664A-3BC5-7596CC8A4A6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21012A3A-1198-664A-3BC5-7596CC8A4A6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE0F7767-96B8-D168-CF7B-9A25CA80A819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE0F7767-96B8-D168-CF7B-9A25CA80A819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE0F7767-96B8-D168-CF7B-9A25CA80A819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE0F7767-96B8-D168-CF7B-9A25CA80A819}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{145E80F2-0D39-08AF-1D1D-845695688CDE} = {CC06BBEA-78FB-1DEC-A088-AA7D257CBC79}
+		{21012A3A-1198-664A-3BC5-7596CC8A4A6E} = {145E80F2-0D39-08AF-1D1D-845695688CDE}
+		{FE0F7767-96B8-D168-CF7B-9A25CA80A819} = {145E80F2-0D39-08AF-1D1D-845695688CDE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66AB0C6F-AAE5-4202-9484-060779439BD9}
+	EndGlobalSection
+EndGlobal
