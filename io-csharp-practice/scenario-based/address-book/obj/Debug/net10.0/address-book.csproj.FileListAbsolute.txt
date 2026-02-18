@@ -1,0 +1,15 @@
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\address-book\bin\Debug\net10.0\address-book.exe
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\address-book\bin\Debug\net10.0\address-book.deps.json
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\address-book\bin\Debug\net10.0\address-book.runtimeconfig.json
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\address-book\bin\Debug\net10.0\address-book.dll
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\address-book\bin\Debug\net10.0\address-book.pdb
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\address-book\obj\Debug\net10.0\address-book.GeneratedMSBuildEditorConfig.editorconfig
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\address-book\obj\Debug\net10.0\address-book.AssemblyInfoInputs.cache
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\address-book\obj\Debug\net10.0\address-book.AssemblyInfo.cs
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\address-book\obj\Debug\net10.0\address-book.csproj.CoreCompileInputs.cache
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\address-book\obj\Debug\net10.0\address-book.sourcelink.json
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\address-book\obj\Debug\net10.0\address-book.dll
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\address-book\obj\Debug\net10.0\refint\address-book.dll
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\address-book\obj\Debug\net10.0\address-book.pdb
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\address-book\obj\Debug\net10.0\address-book.genruntimeconfig.cache
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\address-book\obj\Debug\net10.0\ref\address-book.dll
