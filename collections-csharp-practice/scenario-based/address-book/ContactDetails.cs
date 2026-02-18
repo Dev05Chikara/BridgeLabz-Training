@@ -13,14 +13,14 @@ internal class ContactDetails
 
     public ContactDetails(string firstName, string lastName, string address, string city, string state, string zip, string phoneNumber, string email)
     {
-        this.firstName= firstName;
-        this.lastName= lastName;
-        this.address= address;
-        this.city= city;
-        this.state= state;
-        this.zip= zip;
-        this.phoneNumber= phoneNumber;
-        this.email= email;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.address = address;
+        this.city = city;
+        this.state = state;
+        this.zip = zip;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
     }
 
     public string GetFirstName()
@@ -30,7 +30,7 @@ internal class ContactDetails
 
     public string GetLastName()
     {
-    return lastName;
+        return lastName;
     }
 
     public string GetCity()
@@ -42,19 +42,25 @@ internal class ContactDetails
         return state;
     }
 
-    public void UpdateDetails(string lastName, string address, string city,string state, string zip, string phoneNumber, string email)
+    public string GetZip()
     {
-        this.lastName= lastName;
-        this.address= address;
-        this.city= city;
-        this.state= state;
-        this.zip= zip;
-        this.phoneNumber= phoneNumber;
-        this.email= email;
+        return zip;
+    }
+
+
+    public void UpdateDetails(string lastName, string address, string city, string state, string zip, string phoneNumber, string email)
+    {
+        this.lastName = lastName;
+        this.address = address;
+        this.city = city;
+        this.state = state;
+        this.zip = zip;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
     }
 
     public override string ToString()
     {
-        return firstName+" "+lastName+" | "+address+" | "+city+" | "+state+", "+zip+" | "+phoneNumber+" | "+email;
+        return firstName + " " + lastName + " | " + address + " | " + city + " | " + state + ", " + zip + " | " + phoneNumber + " | " + email;
     }
 }

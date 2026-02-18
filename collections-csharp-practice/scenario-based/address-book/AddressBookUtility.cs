@@ -175,6 +175,63 @@ class AddressBookUtility : IAddressBook
             }
         }
 
-        Console.WriteLine("Contacts sorted alphabetically by name.");
+        Console.WriteLine("Contacts sorted by Name.");
+    }
+
+    public void SortByCity()
+    {
+        for (int i = 0; i < contacts.Count - 1; i++)
+        {
+            for (int j = 0; j < contacts.Count - i - 1; j++)
+            {
+                if (string.Compare(contacts[j].GetCity(),
+                                   contacts[j + 1].GetCity(), true) > 0)
+                {
+                    ContactDetails temp = contacts[j];
+                    contacts[j] = contacts[j + 1];
+                    contacts[j + 1] = temp;
+                }
+            }
+        }
+
+        Console.WriteLine("Contacts sorted by City.");
+    }
+
+    public void SortByState()
+    {
+        for (int i = 0; i < contacts.Count - 1; i++)
+        {
+            for (int j = 0; j < contacts.Count - i - 1; j++)
+            {
+                if (string.Compare(contacts[j].GetState(),
+                                   contacts[j + 1].GetState(), true) > 0)
+                {
+                    ContactDetails temp = contacts[j];
+                    contacts[j] = contacts[j + 1];
+                    contacts[j + 1] = temp;
+                }
+            }
+        }
+
+        Console.WriteLine("Contacts sorted by State.");
+    }
+
+    public void SortByZip()
+    {
+        for (int i = 0; i < contacts.Count - 1; i++)
+        {
+            for (int j = 0; j < contacts.Count - i - 1; j++)
+            {
+                if (string.Compare(contacts[j].GetZip(),
+                                   contacts[j + 1].GetZip(), true) > 0)
+                {
+                    ContactDetails temp = contacts[j];
+                    contacts[j] = contacts[j + 1];
+                    contacts[j + 1] = temp;
+                }
+            }
+        }
+
+        Console.WriteLine("Contacts sorted by Zip.");
     }
 }
