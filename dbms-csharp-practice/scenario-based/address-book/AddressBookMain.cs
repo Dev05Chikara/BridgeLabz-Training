@@ -1,10 +1,8 @@
-using System;
 class AddressBookMain
 {
-    static void Main()
+    static void Main(string[] args)
     {
-        Console.WriteLine("---------- Welcome to Address-Book ----------");
-        AddressBookMenu menu= new AddressBookMenu();
+        AddressBookMenu menu = new AddressBookMenu();
         menu.Start();
-    }    
+    }
 }

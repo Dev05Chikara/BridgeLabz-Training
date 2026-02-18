@@ -1,180 +1,138 @@
 using System;
 
-class AddressBookMenu
+public class AddressBookMenu
 {
+    private DatabaseService db = new DatabaseService();
+
     public void Start()
     {
-        AddressBookSystem system = new AddressBookSystem();
-        AddressBookUtility book = null;
-
-        int choice;
-
-        do
+        while (true)
         {
-            Console.WriteLine("\n========= ADDRESS BOOK SYSTEM =========");
-            Console.WriteLine("1. Add Address Book");
-            Console.WriteLine("2. Display Address Books");
-            Console.WriteLine("3. Select Address Book");
-            Console.WriteLine("4. Search Person by City");
-            Console.WriteLine("5. Search Person by State");
-            Console.WriteLine("6. Count Contacts by City");
-            Console.WriteLine("7. Count Contacts by State");
-            Console.WriteLine("0. Exit");
-            Console.Write("Enter your choice: ");
+            Console.WriteLine("\n===== ADDRESS BOOK MENU =====");
+            Console.WriteLine("1. Create AddressBook");
+            Console.WriteLine("2. Open AddressBook");
+            Console.WriteLine("3. Show All AddressBooks");
+            Console.WriteLine("4. Exit");
 
-            if (!int.TryParse(Console.ReadLine(), out choice))
-            {
-                Console.WriteLine("Invalid input. Enter numeric choice.");
-                continue;
-            }
+            Console.Write("Choose option: ");
+            int choice = int.Parse(Console.ReadLine() ?? "0");
 
             switch (choice)
             {
                 case 1:
-                    system.AddAddressBook();
+                    Console.Write("Enter AddressBook name: ");
+                    db.CreateAddressBook(Console.ReadLine() ?? "");
                     break;
 
                 case 2:
-                    system.DisplayAddressBooks();
+                    OpenAddressBook();
                     break;
 
                 case 3:
-                    book = system.SelectAddressBook();
-                    if (book != null)
-                        ContactMenu(book);
+                    db.ShowAddressBooks();
                     break;
 
                 case 4:
-                    Console.Write("Enter City: ");
-                    system.SearchByCityOrState(Console.ReadLine(), true);
-                    break;
-
-                case 5:
-                    Console.Write("Enter State: ");
-                    system.SearchByCityOrState(Console.ReadLine(), false);
-                    break;
-
-                case 6:
-                    Console.Write("Enter City: ");
-                    system.CountByCityOrState(Console.ReadLine(), true);
-                    break;
-
-                case 7:
-                    Console.Write("Enter State: ");
-                    system.CountByCityOrState(Console.ReadLine(), false);
-                    break;
-
-                case 0:
-                    Console.WriteLine("Exiting...");
-                    break;
-
-                default:
-                    Console.WriteLine("Invalid choice.");
-                    break;
+                    return;
             }
-
-        } while (choice != 0);
+        }
     }
 
-    void ContactMenu(AddressBookUtility address)
+    private void OpenAddressBook()
     {
-        int option;
+        Console.Write("Enter AddressBook name: ");
+        string name = Console.ReadLine() ?? "";
 
-        do
+        if (db.AddressBookExists(name))
         {
-            Console.WriteLine("\n----- ADDRESS BOOK MENU -----");
-            Console.WriteLine("1. Add Contact(s)");
-            Console.WriteLine("2. Display Contacts");
-            Console.WriteLine("3. Edit Contact");
+            Console.WriteLine("AddressBook opened successfully.");
+            ContactMenu();
+        }
+        else
+        {
+            Console.WriteLine("AddressBook does not exist.");
+        }
+    }
+
+    private void ContactMenu()
+    {
+        while (true)
+        {
+            Console.WriteLine("\n===== CONTACT MENU =====");
+            Console.WriteLine("1. Add Contact");
+            Console.WriteLine("2. Show Contacts");
+            Console.WriteLine("3. Update Contact");
             Console.WriteLine("4. Delete Contact");
-            Console.WriteLine("5. Sort by Name");
-            Console.WriteLine("6. Sort by City");
-            Console.WriteLine("7. Sort by State");
-            Console.WriteLine("8. Sort by Zip");
-            Console.WriteLine("9. Write to CSV");
-            Console.WriteLine("10. Read from CSV");
-            Console.WriteLine("11. Write to JSON");
-            Console.WriteLine("12. Read from JSON");
-            Console.WriteLine("0. Back");
-            Console.Write("Enter your option: ");
+            Console.WriteLine("5. Back to AddressBook Menu");
 
-            if (!int.TryParse(Console.ReadLine(), out option))
-            {
-                Console.WriteLine("Invalid input. Enter numeric choice.");
-                continue;
-            }
+            Console.Write("Choose option: ");
+            int choice = int.Parse(Console.ReadLine() ?? "0");
 
-            switch (option)
+            switch (choice)
             {
                 case 1:
-                    address.AddDetails();
+                    AddContact();
                     break;
 
                 case 2:
-                    address.DisplayAll();
+                    db.ShowContacts();
                     break;
 
                 case 3:
-                    address.EditContact();
+                    Console.Write("Enter Contact ID: ");
+                    int id = int.Parse(Console.ReadLine() ?? "0");
+                    Console.Write("Enter new phone: ");
+                    string phone = Console.ReadLine() ?? "";
+                    db.UpdateContact(id, phone);
                     break;
 
                 case 4:
-                    address.DeleteContact();
+                    Console.Write("Enter Contact ID: ");
+                    db.DeleteContact(int.Parse(Console.ReadLine() ?? "0"));
                     break;
 
                 case 5:
-                    address.SortContactsByName();
-                    break;
-
-                case 6:
-                    address.SortByCity();
-                    break;
-
-                case 7:
-                    address.SortByState();
-                    break;
-
-                case 8:
-                    address.SortByZip();
-                    break;
-
-                case 9:
-                    Console.Write("Enter CSV file name (example: data.csv): ");
-                    string csvFile = Console.ReadLine();
-                    IAddressBookStorage csvStorage = new CSVStorage();
-                    address.SaveData(csvStorage, csvFile);
-                    break;
-
-                case 10:
-                    Console.Write("Enter CSV file name to read: ");
-                    string csvRead = Console.ReadLine();
-                    IAddressBookStorage csvStorageRead = new CSVStorage();
-                    address.LoadData(csvStorageRead, csvRead);
-                    break;
-
-                case 11:
-                    Console.Write("Enter JSON file name (example: data.json): ");
-                    string jsonFile = Console.ReadLine();
-                    IAddressBookStorage jsonStorage = new JSONStorage();
-                    address.SaveData(jsonStorage, jsonFile);
-                    break;
-
-                case 12:
-                    Console.Write("Enter JSON file name to read: ");
-                    string jsonRead = Console.ReadLine();
-                    IAddressBookStorage jsonStorageRead = new JSONStorage();
-                    address.LoadData(jsonStorageRead, jsonRead);
-                    break;
-
-                case 0:
-                    break;
-
-                default:
-                    Console.WriteLine("Invalid option.");
-                    break;
+                    return;
             }
-
-        } while (option != 0);
+        }
     }
 
+    private void AddContact()
+    {
+        try
+        {
+            Console.Write("First Name: ");
+            string first = Console.ReadLine() ?? "";
+
+            Console.Write("Last Name: ");
+            string last = Console.ReadLine() ?? "";
+
+            Console.Write("Address: ");
+            string address = Console.ReadLine() ?? "";
+
+            Console.Write("City: ");
+            string city = Console.ReadLine() ?? "";
+
+            Console.Write("State: ");
+            string state = Console.ReadLine() ?? "";
+
+            Console.Write("Zip: ");
+            string zip = Console.ReadLine() ?? "";
+
+            Console.Write("Phone: ");
+            string phone = Console.ReadLine() ?? "";
+
+            Console.Write("Email: ");
+            string email = Console.ReadLine() ?? "";
+
+            ContactDetails contact =
+                new ContactDetails(first, last, address, city, state, zip, phone, email);
+
+            db.AddContact(contact);
+        }
+        catch (InvalidContactException ex)
+        {
+            Console.WriteLine("Validation Error: " + ex.Message);
+        }
+    }
 }
