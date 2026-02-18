@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text.Json;
 
 class AddressBookUtility : IAddressBook
 {
@@ -10,8 +11,8 @@ class AddressBookUtility : IAddressBook
     {
         for (int i = 0; i < contacts.Count; i++)
         {
-            if (contacts[i].GetFirstName().Equals(firstName, StringComparison.OrdinalIgnoreCase) &&
-                contacts[i].GetLastName().Equals(lastName, StringComparison.OrdinalIgnoreCase))
+            if (contacts[i].FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase) &&
+                contacts[i].LastName.Equals(lastName, StringComparison.OrdinalIgnoreCase))
             {
                 return true;
             }
@@ -95,7 +96,7 @@ class AddressBookUtility : IAddressBook
 
         for (int i = 0; i < contacts.Count; i++)
         {
-            Console.WriteLine((i + 1) + ". " + contacts[i]);
+            Console.WriteLine((i + 1) + ". " + contacts[i].ToString());
         }
     }
 
@@ -115,8 +116,8 @@ class AddressBookUtility : IAddressBook
 
         for (int i = 0; i < contacts.Count; i++)
         {
-            if (contacts[i].GetFirstName().Equals(firstName, StringComparison.OrdinalIgnoreCase) &&
-                contacts[i].GetLastName().Equals(lastName, StringComparison.OrdinalIgnoreCase))
+            if (contacts[i].FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase) &&
+                contacts[i].LastName.Equals(lastName, StringComparison.OrdinalIgnoreCase))
             {
                 try
                 {
@@ -141,9 +142,15 @@ class AddressBookUtility : IAddressBook
                     Console.Write("Enter new email: ");
                     string email = Console.ReadLine();
 
-                    contacts[i].UpdateDetails(
-                        newLastName, address, city, state,
-                        zip, phoneNumber, email);
+                    contacts[i] = new ContactDetails(
+                        contacts[i].FirstName,
+                        newLastName,
+                        address,
+                        city,
+                        state,
+                        zip,
+                        phoneNumber,
+                        email);
 
                     Console.WriteLine("Contact updated successfully.");
                 }
@@ -179,8 +186,8 @@ class AddressBookUtility : IAddressBook
 
         for (int i = 0; i < contacts.Count; i++)
         {
-            if (contacts[i].GetFirstName().Equals(firstName, StringComparison.OrdinalIgnoreCase) &&
-                contacts[i].GetLastName().Equals(lastName, StringComparison.OrdinalIgnoreCase))
+            if (contacts[i].FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase) &&
+                contacts[i].LastName.Equals(lastName, StringComparison.OrdinalIgnoreCase))
             {
                 contacts.RemoveAt(i);
                 Console.WriteLine("Contact deleted successfully.");
@@ -190,7 +197,6 @@ class AddressBookUtility : IAddressBook
 
         Console.WriteLine("Contact not found.");
     }
-
 
     public List<ContactDetails> GetContacts()
     {
@@ -203,10 +209,10 @@ class AddressBookUtility : IAddressBook
         {
             for (int j = 0; j < contacts.Count - i - 1; j++)
             {
-                string name1 = contacts[j].GetFirstName() + contacts[j].GetLastName();
-                string name2 = contacts[j + 1].GetFirstName() + contacts[j + 1].GetLastName();
+                string name1 = contacts[j].FirstName + contacts[j].LastName;
+                string name2 = contacts[j + 1].FirstName + contacts[j + 1].LastName;
 
-                if (string.Compare(name1, name2, true) > 0)
+                if (string.Compare(name1, name2, StringComparison.OrdinalIgnoreCase) > 0)
                 {
                     ContactDetails temp = contacts[j];
                     contacts[j] = contacts[j + 1];
@@ -224,8 +230,9 @@ class AddressBookUtility : IAddressBook
         {
             for (int j = 0; j < contacts.Count - i - 1; j++)
             {
-                if (string.Compare(contacts[j].GetCity(),
-                                   contacts[j + 1].GetCity(), true) > 0)
+                if (string.Compare(contacts[j].City,
+                                   contacts[j + 1].City,
+                                   StringComparison.OrdinalIgnoreCase) > 0)
                 {
                     ContactDetails temp = contacts[j];
                     contacts[j] = contacts[j + 1];
@@ -243,8 +250,9 @@ class AddressBookUtility : IAddressBook
         {
             for (int j = 0; j < contacts.Count - i - 1; j++)
             {
-                if (string.Compare(contacts[j].GetState(),
-                                   contacts[j + 1].GetState(), true) > 0)
+                if (string.Compare(contacts[j].State,
+                                   contacts[j + 1].State,
+                                   StringComparison.OrdinalIgnoreCase) > 0)
                 {
                     ContactDetails temp = contacts[j];
                     contacts[j] = contacts[j + 1];
@@ -262,8 +270,9 @@ class AddressBookUtility : IAddressBook
         {
             for (int j = 0; j < contacts.Count - i - 1; j++)
             {
-                if (string.Compare(contacts[j].GetZip(),
-                                   contacts[j + 1].GetZip(), true) > 0)
+                if (string.Compare(contacts[j].Zip,
+                                   contacts[j + 1].Zip,
+                                   StringComparison.OrdinalIgnoreCase) > 0)
                 {
                     ContactDetails temp = contacts[j];
                     contacts[j] = contacts[j + 1];
@@ -275,51 +284,44 @@ class AddressBookUtility : IAddressBook
         Console.WriteLine("Contacts sorted by Zip.");
     }
 
-    public void WriteToFile(string fileName)
+
+    public void WriteToCSV(string fileName)
     {
         try
         {
-            if (string.IsNullOrWhiteSpace(fileName))
-            {
-                Console.WriteLine("Invalid file name.");
-                return;
-            }
-
             using (StreamWriter writer = new StreamWriter(fileName))
             {
+                writer.WriteLine("FirstName,LastName,Address,City,State,Zip,PhoneNumber,Email");
+
                 for (int i = 0; i < contacts.Count; i++)
                 {
-                    writer.WriteLine(contacts[i].GetFirstName() + "," +
-                                     contacts[i].GetLastName() + "," +
-                                     contacts[i].GetAddress() + "," +
-                                     contacts[i].GetCity() + "," +
-                                     contacts[i].GetState() + "," +
-                                     contacts[i].GetZip() + "," +
-                                     contacts[i].GetPhoneNumber() + "," +
-                                     contacts[i].GetEmail());
+                    writer.WriteLine(
+                        contacts[i].FirstName + "," +
+                        contacts[i].LastName + "," +
+                        contacts[i].Address + "," +
+                        contacts[i].City + "," +
+                        contacts[i].State + "," +
+                        contacts[i].Zip + "," +
+                        contacts[i].PhoneNumber + "," +
+                        contacts[i].Email);
                 }
             }
 
-            Console.WriteLine("Contacts written successfully.");
-        }
-        catch (IOException ex)
-        {
-            Console.WriteLine("File Error: " + ex.Message);
+            Console.WriteLine("Data written to CSV successfully.");
         }
         catch (Exception ex)
         {
-            Console.WriteLine("Unexpected Error: " + ex.Message);
+            Console.WriteLine("Error writing CSV: " + ex.Message);
         }
     }
 
-
-    public void ReadFromFile(string fileName)
+    public void ReadFromCSV(string fileName)
     {
         try
         {
             if (!File.Exists(fileName))
             {
-                Console.WriteLine("File does not exist.");
+                Console.WriteLine("File not found.");
                 return;
             }
 
@@ -328,9 +330,16 @@ class AddressBookUtility : IAddressBook
             using (StreamReader reader = new StreamReader(fileName))
             {
                 string line;
+                bool header = true;
 
                 while ((line = reader.ReadLine()) != null)
                 {
+                    if (header)
+                    {
+                        header = false;
+                        continue;
+                    }
+
                     string[] parts = line.Split(',');
 
                     if (parts.Length == 8)
@@ -342,20 +351,58 @@ class AddressBookUtility : IAddressBook
                 }
             }
 
-            Console.WriteLine("Contacts loaded successfully.");
-        }
-        catch (IOException ex)
-        {
-            Console.WriteLine("File Error: " + ex.Message);
-        }
-        catch (InvalidContactException ex)
-        {
-            Console.WriteLine("Validation Error in file data: " + ex.Message);
+            Console.WriteLine("Data loaded from CSV successfully.");
         }
         catch (Exception ex)
         {
-            Console.WriteLine("Unexpected Error: " + ex.Message);
+            Console.WriteLine("Error reading CSV: " + ex.Message);
         }
     }
 
+    public void WriteToJSON(string fileName)
+    {
+        try
+        {
+            JsonSerializerOptions options = new JsonSerializerOptions();
+            options.WriteIndented = true;
+
+            string jsonString = JsonSerializer.Serialize(contacts, options);
+
+            File.WriteAllText(fileName, jsonString);
+
+            Console.WriteLine("Data written to JSON successfully.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error writing JSON: " + ex.Message);
+        }
+    }
+
+    public void ReadFromJSON(string fileName)
+    {
+        try
+        {
+            if (!File.Exists(fileName))
+            {
+                Console.WriteLine("File not found.");
+                return;
+            }
+
+            string jsonString = File.ReadAllText(fileName);
+
+            List<ContactDetails> data =
+                JsonSerializer.Deserialize<List<ContactDetails>>(jsonString);
+
+            if (data != null)
+            {
+                contacts = data;
+            }
+
+            Console.WriteLine("Data loaded from JSON successfully.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error reading JSON: " + ex.Message);
+        }
+    }
 }

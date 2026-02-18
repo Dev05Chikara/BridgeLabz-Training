@@ -11,6 +11,12 @@ class AddressBookSystem
         Console.Write("Enter Address Book Name: ");
         string name = Console.ReadLine();
 
+        if (string.IsNullOrWhiteSpace(name))
+        {
+            Console.WriteLine("Invalid Address Book name.");
+            return;
+        }
+
         if (addressBooks.ContainsKey(name))
         {
             Console.WriteLine("Address Book already exists.");
@@ -31,6 +37,12 @@ class AddressBookSystem
 
         Console.Write("Enter Address Book Name: ");
         string name = Console.ReadLine();
+
+        if (string.IsNullOrWhiteSpace(name))
+        {
+            Console.WriteLine("Invalid name.");
+            return null;
+        }
 
         if (addressBooks.ContainsKey(name))
         {
@@ -58,6 +70,12 @@ class AddressBookSystem
 
     public void SearchByCityOrState(string value, bool searchByCity)
     {
+        if (string.IsNullOrWhiteSpace(value))
+        {
+            Console.WriteLine("Invalid search value.");
+            return;
+        }
+
         bool found = false;
 
         foreach (var entry in addressBooks)
@@ -66,21 +84,32 @@ class AddressBookSystem
 
             for (int i = 0; i < contacts.Count; i++)
             {
-                if ((searchByCity && contacts[i].GetCity().Equals(value, StringComparison.OrdinalIgnoreCase))
-                    || (!searchByCity && contacts[i].GetState().Equals(value, StringComparison.OrdinalIgnoreCase)))
+                if ((searchByCity &&
+                     contacts[i].City.Equals(value, StringComparison.OrdinalIgnoreCase))
+                    ||
+                    (!searchByCity &&
+                     contacts[i].State.Equals(value, StringComparison.OrdinalIgnoreCase)))
                 {
-                    Console.WriteLine("[" + entry.Key + "] " + contacts[i]);
+                    Console.WriteLine("[" + entry.Key + "] " + contacts[i].ToString());
                     found = true;
                 }
             }
         }
 
         if (!found)
+        {
             Console.WriteLine("No matching records found.");
+        }
     }
 
     public void CountByCityOrState(string value, bool countByCity)
     {
+        if (string.IsNullOrWhiteSpace(value))
+        {
+            Console.WriteLine("Invalid value.");
+            return;
+        }
+
         int totalCount = 0;
 
         foreach (var entry in addressBooks)
@@ -89,8 +118,11 @@ class AddressBookSystem
 
             for (int i = 0; i < contacts.Count; i++)
             {
-                if ((countByCity && contacts[i].GetCity().Equals(value, StringComparison.OrdinalIgnoreCase))
-                    || (!countByCity && contacts[i].GetState().Equals(value, StringComparison.OrdinalIgnoreCase)))
+                if ((countByCity &&
+                     contacts[i].City.Equals(value, StringComparison.OrdinalIgnoreCase))
+                    ||
+                    (!countByCity &&
+                     contacts[i].State.Equals(value, StringComparison.OrdinalIgnoreCase)))
                 {
                     totalCount++;
                 }

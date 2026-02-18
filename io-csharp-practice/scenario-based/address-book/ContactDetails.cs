@@ -2,45 +2,48 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.Text.RegularExpressions;
 
-internal class ContactDetails
+public class ContactDetails
 {
     [Required]
-    private string firstName;
+    public string FirstName { get; set; }
 
     [Required]
-    private string lastName;
+    public string LastName { get; set; }
 
     [Required]
-    private string address;
+    public string Address { get; set; }
 
     [Required]
-    private string city;
+    public string City { get; set; }
 
     [Required]
-    private string state;
+    public string State { get; set; }
 
     [Required]
-    private string zip;
+    public string Zip { get; set; }
 
     [Required]
-    private string phoneNumber;
+    public string PhoneNumber { get; set; }
 
     [Required]
-    private string email;
+    public string Email { get; set; }
+
+    // IMPORTANT: Default constructor required for JSON
+    public ContactDetails() { }
 
     public ContactDetails(string firstName, string lastName, string address,
         string city, string state, string zip, string phoneNumber, string email)
     {
         Validate(firstName, lastName, address, city, state, zip, phoneNumber, email);
 
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.address = address;
-        this.city = city;
-        this.state = state;
-        this.zip = zip;
-        this.phoneNumber = phoneNumber;
-        this.email = email;
+        FirstName = firstName;
+        LastName = lastName;
+        Address = address;
+        City = city;
+        State = state;
+        Zip = zip;
+        PhoneNumber = phoneNumber;
+        Email = email;
     }
 
     private void Validate(string firstName, string lastName, string address,
@@ -63,37 +66,13 @@ internal class ContactDetails
             throw new InvalidContactException("Invalid email format.");
     }
 
-    public string GetFirstName() { return firstName; }
-    public string GetLastName() { return lastName; }
-    public string GetAddress() { return address; }
-    public string GetCity() { return city; }
-    public string GetState() { return state; }
-    public string GetZip() { return zip; }
-    public string GetPhoneNumber() { return phoneNumber; }
-    public string GetEmail() { return email; }
-
-    public void UpdateDetails(string lastName, string address,
-        string city, string state, string zip,
-        string phoneNumber, string email)
-    {
-        Validate(firstName, lastName, address, city, state, zip, phoneNumber, email);
-
-        this.lastName = lastName;
-        this.address = address;
-        this.city = city;
-        this.state = state;
-        this.zip = zip;
-        this.phoneNumber = phoneNumber;
-        this.email = email;
-    }
-
     public override string ToString()
     {
-        return firstName + " " + lastName + " | " +
-               address + " | " +
-               city + " | " +
-               state + ", " + zip + " | " +
-               phoneNumber + " | " +
-               email;
+        return FirstName + " " + LastName + " | " +
+               Address + " | " +
+               City + " | " +
+               State + ", " + Zip + " | " +
+               PhoneNumber + " | " +
+               Email;
     }
 }

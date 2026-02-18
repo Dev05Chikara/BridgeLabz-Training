@@ -91,8 +91,10 @@ class AddressBookMenu
             Console.WriteLine("6. Sort by City");
             Console.WriteLine("7. Sort by State");
             Console.WriteLine("8. Sort by Zip");
-            Console.WriteLine("9. Write to File");
-            Console.WriteLine("10. Read from File");
+            Console.WriteLine("9. Write to CSV");
+            Console.WriteLine("10. Read from CSV");
+            Console.WriteLine("11. Write to JSON");
+            Console.WriteLine("12. Read from JSON");
             Console.WriteLine("0. Back");
             Console.Write("Enter your option: ");
 
@@ -137,13 +139,23 @@ class AddressBookMenu
                     break;
 
                 case 9:
-                    Console.Write("Enter file name: ");
-                    address.WriteToFile(Console.ReadLine());
+                    Console.Write("Enter CSV file name (example: data.csv): ");
+                    address.WriteToCSV(Console.ReadLine());
                     break;
 
                 case 10:
-                    Console.Write("Enter file name: ");
-                    address.ReadFromFile(Console.ReadLine());
+                    Console.Write("Enter CSV file name to read: ");
+                    address.ReadFromCSV(Console.ReadLine());
+                    break;
+
+                case 11:
+                    Console.Write("Enter JSON file name (example: data.json): ");
+                    address.WriteToJSON(Console.ReadLine());
+                    break;
+
+                case 12:
+                    Console.Write("Enter JSON file name to read: ");
+                    address.ReadFromJSON(Console.ReadLine());
                     break;
 
                 case 0:
@@ -156,4 +168,5 @@ class AddressBookMenu
 
         } while (option != 0);
     }
+
 }
