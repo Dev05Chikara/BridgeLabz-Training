@@ -8,6 +8,7 @@ class AddressBookMenu
         AddressBookUtility book = null;
 
         int choice;
+
         do
         {
             Console.WriteLine("\n========= ADDRESS BOOK SYSTEM =========");
@@ -20,40 +21,53 @@ class AddressBookMenu
             Console.WriteLine("7. Count Contacts by State");
             Console.WriteLine("0. Exit");
             Console.Write("Enter your choice: ");
-            choice = int.Parse(Console.ReadLine());
+
+            if (!int.TryParse(Console.ReadLine(), out choice))
+            {
+                Console.WriteLine("Invalid input. Enter numeric choice.");
+                continue;
+            }
 
             switch (choice)
             {
                 case 1:
                     system.AddAddressBook();
                     break;
+
                 case 2:
                     system.DisplayAddressBooks();
                     break;
+
                 case 3:
                     book = system.SelectAddressBook();
                     if (book != null)
                         ContactMenu(book);
                     break;
+
                 case 4:
                     Console.Write("Enter City: ");
                     system.SearchByCityOrState(Console.ReadLine(), true);
                     break;
+
                 case 5:
                     Console.Write("Enter State: ");
                     system.SearchByCityOrState(Console.ReadLine(), false);
                     break;
+
                 case 6:
                     Console.Write("Enter City: ");
                     system.CountByCityOrState(Console.ReadLine(), true);
                     break;
+
                 case 7:
                     Console.Write("Enter State: ");
                     system.CountByCityOrState(Console.ReadLine(), false);
                     break;
+
                 case 0:
                     Console.WriteLine("Exiting...");
                     break;
+
                 default:
                     Console.WriteLine("Invalid choice.");
                     break;
@@ -65,6 +79,7 @@ class AddressBookMenu
     void ContactMenu(AddressBookUtility address)
     {
         int option;
+
         do
         {
             Console.WriteLine("\n----- ADDRESS BOOK MENU -----");
@@ -80,45 +95,60 @@ class AddressBookMenu
             Console.WriteLine("10. Read from File");
             Console.WriteLine("0. Back");
             Console.Write("Enter your option: ");
-            option = int.Parse(Console.ReadLine());
+
+            if (!int.TryParse(Console.ReadLine(), out option))
+            {
+                Console.WriteLine("Invalid input. Enter numeric choice.");
+                continue;
+            }
 
             switch (option)
             {
                 case 1:
                     address.AddDetails();
                     break;
+
                 case 2:
                     address.DisplayAll();
                     break;
+
                 case 3:
                     address.EditContact();
                     break;
+
                 case 4:
                     address.DeleteContact();
                     break;
+
                 case 5:
                     address.SortContactsByName();
                     break;
+
                 case 6:
                     address.SortByCity();
                     break;
+
                 case 7:
                     address.SortByState();
                     break;
+
                 case 8:
                     address.SortByZip();
                     break;
+
                 case 9:
-                    Console.Write("Enter file name (example: data.txt): ");
+                    Console.Write("Enter file name: ");
                     address.WriteToFile(Console.ReadLine());
                     break;
+
                 case 10:
-                    Console.Write("Enter file name to read: ");
+                    Console.Write("Enter file name: ");
                     address.ReadFromFile(Console.ReadLine());
                     break;
+
                 case 0:
-                    Console.WriteLine("Returning...");
                     break;
+
                 default:
                     Console.WriteLine("Invalid option.");
                     break;
