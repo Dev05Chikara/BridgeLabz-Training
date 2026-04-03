@@ -1332,11 +1332,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\VS_Code\\C#\\Goal-Achiever-Module2\\Projects\\Employee-Wage\\Employee-Wage.csproj",
+      "projectUniqueName": "C:\\BridgeLabz-Training\\dbms-csharp-practice\\scenario-based\\employee-wage\\Employee-Wage.csproj",
       "projectName": "Employee-Wage",
-      "projectPath": "E:\\VS_Code\\C#\\Goal-Achiever-Module2\\Projects\\Employee-Wage\\Employee-Wage.csproj",
+      "projectPath": "C:\\BridgeLabz-Training\\dbms-csharp-practice\\scenario-based\\employee-wage\\Employee-Wage.csproj",
       "packagesPath": "C:\\Users\\devch\\.nuget\\packages\\",
-      "outputPath": "E:\\VS_Code\\C#\\Goal-Achiever-Module2\\Projects\\Employee-Wage\\obj\\",
+      "outputPath": "C:\\BridgeLabz-Training\\dbms-csharp-practice\\scenario-based\\employee-wage\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

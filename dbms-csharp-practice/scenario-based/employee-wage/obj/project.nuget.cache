@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pShfa96ASt4=",
+  "dgSpecHash": "W2Zs/arP9Dw=",
   "success": true,
-  "projectFilePath": "E:\\VS_Code\\C#\\Goal-Achiever-Module2\\Projects\\Employee-Wage\\Employee-Wage.csproj",
+  "projectFilePath": "C:\\BridgeLabz-Training\\dbms-csharp-practice\\scenario-based\\employee-wage\\Employee-Wage.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\devch\\.nuget\\packages\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "C:\\Users\\devch\\.nuget\\packages\\azure.identity\\1.17.1\\azure.identity.1.17.1.nupkg.sha512",
